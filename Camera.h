@@ -15,7 +15,7 @@
 #include "OnChangeCameraSubject.h"
 #include "stdio.h"
 #include "Light.h"
-
+class Application;
 class Camera : public OnChangeCameraSubject {
 
 private:

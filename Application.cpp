@@ -37,7 +37,8 @@ Application::Application(int width, int height, const char* title) {
 	// start GLEW extension handler
 	glewExperimental = GL_TRUE;
 	glewInit();
-	glEnable(GL_DEPTH_TEST); 
+	glEnable(GL_DEPTH_TEST);
+	glEnable(GL_STENCIL_TEST);
 
 	int fwidth = 800, fheight = 600;
 	float ratio = fwidth / (float)fheight;
@@ -67,6 +68,8 @@ void Application::mainloop() {
 	while (!glfwWindowShouldClose(window))
 	{
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+		keysClicked();
+		mouseClick();
 		scene->drawObj();
 		glfwPollEvents();
 		glfwSwapBuffers(window);
@@ -74,47 +77,68 @@ void Application::mainloop() {
 }
 
 
-void Application::KeysClicked(int key) {
-	switch (key)
+void Application::keysClicked() {
+	if (Controller::keys[87] == true)
 	{
-		case GLFW_KEY_Q:
-			scene->getCamera()->moveUp();
-			break;
-		case GLFW_KEY_E:
-			scene->getCamera()->moveDown();
-			break;
-		case GLFW_KEY_W:
-			scene->getCamera()->moveForward();
-			break;
-		case GLFW_KEY_S:
-			scene->getCamera()->moveBack();
-			break;
-        case GLFW_KEY_D:
-			scene->getCamera()->moveLeft();
-            break;
-        case GLFW_KEY_A:
-			scene->getCamera()->moveRight();
-            break;
-        case GLFW_KEY_K:
-			scene->getLight()->move(glm::vec3(0.0f, -0.5f, 0.0f));
-            break;
-        case GLFW_KEY_I:
-			scene->getLight()->move(glm::vec3(0.0f, 0.5f, 0.0f));
-            break;
-        case GLFW_KEY_J:
-			scene->getLight()->move(glm::vec3(-0.5f, 0.0f, 0.0f));
-            break;
-        case GLFW_KEY_L:
-			scene->getLight()->move(glm::vec3(0.5f, 0.0f, 0.0f));
-            break;
-        case GLFW_KEY_U:
-			scene->getLight()->move(glm::vec3(0.0f, 0.0f, 0.5f));
-            break;
-        case GLFW_KEY_O:
-			scene->getLight()->move(glm::vec3(0.0f, 0.0f, -0.5f));
-            break;
+		scene->getCamera()->moveForward();
 	}
+	if (Controller::keys[83] == true)
+	{
+		scene->getCamera()->moveBack();
+	}
+	if (Controller::keys[65] == true)
+	{
+		scene->getCamera()->moveLeft();
+	}
+	if (Controller::keys[68] == true)
+	{
+		scene->getCamera()->moveRight();
+	}
+	if (Controller::keys[264] == true)
+	{
+		scene->getLight()->move(glm::vec3(0.0f, -0.5f, 0.0f));
+	}
+	if (Controller::keys[265] == true)
+	{
+		scene->getLight()->move(glm::vec3(0.0f, 0.5f, 0.0f));
+	}
+	if (Controller::keys[263] == true)
+	{
+		scene->getLight()->move(glm::vec3(-0.5f, 0.0f, 0.0f));
+	}
+	if (Controller::keys[262] == true)
+	{
+		scene->getLight()->move(glm::vec3(0.5f, 0.0f, 0.0f));
+	}
+	if (Controller::keys[77] == true)
+	{
+		scene->getLight()->move(glm::vec3(0.0f, 0.0f, 0.5f));
+	}
+	if (Controller::keys[78] == true)
+	{
+		scene->getLight()->move(glm::vec3(0.0f, 0.0f, -0.5f));
+	}
+	/*if (Controller::keys[87] == true)
+	{
+		scene->getCamera()->moveForward();
+	}
+	if (Controller::keys[87] == true)
+	{
+		scene->getCamera()->moveForward();
+
+	}*/
+
 }
+
+void Application::mouseClick() {
+	if (Controller::mouseBut[1] == true)
+		scene->getCamera()->cursorCallback(Controller::mouseCur.x, Controller::mouseCur.y);
+	if (Controller::mouseBut[0] == true)
+		scene->addObj(Controller::mouseCur.x, Controller::mouseCur.y);
+
+
+}
+
 void Application::setVerGL() {
 
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);

@@ -1,30 +1,34 @@
-#include "Drawable.h"
+#include "Object.h"
 #include "Application.h"
 //#include "models/worker.h"
 //#include "models/bedna.h"
 //#include "models/suzi_smooth.h"
 #include "models/sphere.h"
 
-int Drawable::drawables = 0;
+int Object::objects = 0;
 
-Drawable::Drawable(Shader* shader, glm::vec3 setPosition, glm::vec3 setScale) {
-	VAO = drawables;
-	VBO = drawables;
+Object::Object(Shader* shader, glm::vec3 setPosition, glm::vec3 setScale) {
+	VAO = objects;
+	VBO = objects;
 	this->shader = shader;
 
-	drawables++;
+	objects++;
 	model = glm::mat4(1.0f);
 	renderObject();
 
 	model = glm::scale(model, setScale);
 	model = glm::translate(model, setPosition);
 }
-Drawable::~Drawable() {
+Object::~Object() {
 	delete this;
 }
 
 
-void Drawable::draw() {
+GLint Object::getID() {
+    return shader->getID();
+}
+
+void Object::draw() {
 	this->shader->setModelMatrix(model);
 
 	glBindVertexArray(VAO);
@@ -32,11 +36,11 @@ void Drawable::draw() {
 	glDrawArrays(GL_TRIANGLES, 0, (GLsizei)pocetPrvku); //mode,first,count
 	glBindVertexArray(VAO);
 }
-void Drawable::setPosition(glm::vec3 position) {
+void Object::setPosition(glm::vec3 position) {
 	this->model = glm::translate(model, position);
 }
 
-void Drawable::renderObject() {
+void Object::renderObject() {
 
 	glGenVertexArrays(1, &VAO);
 	glBindVertexArray(VAO);

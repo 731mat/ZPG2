@@ -26,7 +26,7 @@
 #include "Shader.h"
 #include "Camera.h"
 #include "Controller.h"
-#include "Drawable.h"
+#include "Object.h"
 #include "Light.h"
 #include "opengl_helper.h"
 #include "Scene.h"
@@ -40,7 +40,7 @@ private:
 
 	Controller* controller;
 
-	std::vector<Drawable*> drawables;
+	std::vector<Object*> objects;
 
 	void setVerGL();
 	void getVerGL();
@@ -48,7 +48,9 @@ private:
 	Application(int width, int height, const char* title);
 
 public:
-	void KeysClicked(int key);
+	void keysClicked();
+	void mouseClick();
+
 	static Application* getWindow();
 
 	~Application();

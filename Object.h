@@ -1,5 +1,5 @@
-#ifndef PROJEKT_FINAL_DRAWABLE_H
-#define PROJEKT_FINAL_DRAWABLE_H
+#ifndef PROJEKT_FINAL_OBJECT_H
+#define PROJEKT_FINAL_OBJECT_H
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
@@ -13,19 +13,20 @@
 #include "Shader.h"
 
 
-class Drawable {
+class Object {
 private:
 	glm::mat4 model;
 	Shader* shader;
-	static int drawables;
+	static int objects;
 	GLuint VAO;
 	GLuint VBO;
 
 public:
-	Drawable(Shader* shader, glm::vec3 setPosition, glm::vec3 setScale);
-	~Drawable();
+	Object(Shader* shader, glm::vec3 setPosition, glm::vec3 setScale);
+	~Object();
 	void setPosition(glm::vec3 position);
 	void draw();
 	void renderObject();
+	GLint getID();
 };
-#endif //PROJEKT_FINAL_DRAWABLE_H
+#endif //PROJEKT_FINAL_OBJECT_H

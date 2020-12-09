@@ -107,13 +107,13 @@ void Camera::cursorCallback(float x, float y) {
 		curX = x;
 	if (curY == 0)
 		curY = y;
-	float dx = (x - curX) / 100.0;
-	float dy = (y - curY) / 100.0;
+	float dx = -(x - curX) / 100.0;
+	float dy = -(y - curY) / 100.0;
 
 	center = glm::rotateX(glm::normalize(this->center), dy);
 	center = rotateY(center, dx);
-	//UP = rotateX(glm::normalize(this->UP), dy);
-	//UP = rotateY(UP, dx);
+	center = rotateX(center, dy);
+	UP = rotateY(UP, dx);
 	lookAt(center, UP);
 	//printf("%f, %f\n", dx, dy);
 	curX = x;

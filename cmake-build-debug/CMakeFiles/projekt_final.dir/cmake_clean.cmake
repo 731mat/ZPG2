@@ -2,7 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/projekt_final.dir/Application.cpp.o"
   "CMakeFiles/projekt_final.dir/Camera.cpp.o"
   "CMakeFiles/projekt_final.dir/Controller.cpp.o"
-  "CMakeFiles/projekt_final.dir/Drawable.cpp.o"
+  "CMakeFiles/projekt_final.dir/Object.cpp.o"
   "CMakeFiles/projekt_final.dir/Light.cpp.o"
   "CMakeFiles/projekt_final.dir/main.cpp.o"
   "CMakeFiles/projekt_final.dir/Shader.cpp.o"

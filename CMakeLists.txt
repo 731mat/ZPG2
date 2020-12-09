@@ -16,8 +16,8 @@ add_executable(projekt_final
         Camera.h
         Controller.cpp
         Controller.h
-        Drawable.cpp
-        Drawable.h
+        Object.cpp
+        Object.h
         Light.cpp
         Light.h
         main.cpp

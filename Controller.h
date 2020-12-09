@@ -2,13 +2,22 @@
 #define PROJEKT_FINAL_CONTROLLER_H
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
+#include <glm/glm.hpp>
 #include "Camera.h"
+
 class Controller {
 private:
-	//static Application app;
+	static bool moveMouse;
 public:
 	Controller();
 	~Controller();
+
+	static bool keys[];
+	static bool mouseBut[];
+	static glm::vec2 mouseCur;
+
+	static void identify();
+
 	void setController(GLFWwindow* window);
 	static void error_callback(int error, const char* description);
 	static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);

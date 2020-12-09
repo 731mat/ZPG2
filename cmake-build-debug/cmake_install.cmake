@@ -1,4 +1,4 @@
-# Install script for directory: /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4
+# Install script for directory: /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

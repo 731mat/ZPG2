@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4
+CMAKE_SOURCE_DIR = /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/CMakeFiles /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -204,33 +204,6 @@ Controller.cpp.s:
 	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Controller.cpp.s
 .PHONY : Controller.cpp.s
 
-Drawable.o: Drawable.cpp.o
-
-.PHONY : Drawable.o
-
-# target to build an object file
-Drawable.cpp.o:
-	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Drawable.cpp.o
-.PHONY : Drawable.cpp.o
-
-Drawable.i: Drawable.cpp.i
-
-.PHONY : Drawable.i
-
-# target to preprocess a source file
-Drawable.cpp.i:
-	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Drawable.cpp.i
-.PHONY : Drawable.cpp.i
-
-Drawable.s: Drawable.cpp.s
-
-.PHONY : Drawable.s
-
-# target to generate assembly for a file
-Drawable.cpp.s:
-	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Drawable.cpp.s
-.PHONY : Drawable.cpp.s
-
 Light.o: Light.cpp.o
 
 .PHONY : Light.o
@@ -257,6 +230,33 @@ Light.s: Light.cpp.s
 Light.cpp.s:
 	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Light.cpp.s
 .PHONY : Light.cpp.s
+
+Object.o: Object.cpp.o
+
+.PHONY : Object.o
+
+# target to build an object file
+Object.cpp.o:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Object.cpp.o
+.PHONY : Object.cpp.o
+
+Object.i: Object.cpp.i
+
+.PHONY : Object.i
+
+# target to preprocess a source file
+Object.cpp.i:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Object.cpp.i
+.PHONY : Object.cpp.i
+
+Object.s: Object.cpp.s
+
+.PHONY : Object.s
+
+# target to generate assembly for a file
+Object.cpp.s:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Object.cpp.s
+.PHONY : Object.cpp.s
 
 Scene.o: Scene.cpp.o
 
@@ -384,12 +384,12 @@ help:
 	@echo "... Controller.o"
 	@echo "... Controller.i"
 	@echo "... Controller.s"
-	@echo "... Drawable.o"
-	@echo "... Drawable.i"
-	@echo "... Drawable.s"
 	@echo "... Light.o"
 	@echo "... Light.i"
 	@echo "... Light.s"
+	@echo "... Object.o"
+	@echo "... Object.i"
+	@echo "... Object.s"
 	@echo "... Scene.o"
 	@echo "... Scene.i"
 	@echo "... Scene.s"

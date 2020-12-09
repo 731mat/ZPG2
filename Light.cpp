@@ -6,13 +6,21 @@ Light::Light(Shader* shader) {
 	x = 0.0f;
 	y = 0.0f;
 	z = 0.0f;
-	objLig = new Drawable(shader, getPosition(), glm::vec3(0.5, 0.5, 0.5));
+	objLig = new Object(shader, getPosition(), glm::vec3(0.5, 0.5, 0.5));
+}
+Light::Light(float x, float y, float z) {
+	this->x = x;
+	this->y = y;
+	this->z = z;
 }
 
 Light::~Light() {}
 
 glm::vec3 Light::getPosition() {
 	return glm::vec3(x, y, z);
+}
+glm::vec3 Light::getPositionDirection() {
+	return glm::vec3( 2, 2, 2);
 }
 void Light::draw() {
 	objLig->draw();

@@ -5,8 +5,8 @@ CMakeFiles/projekt_final.dir/Application.cpp.o: ../Application.cpp
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../Application.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../Camera.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../Controller.h
-CMakeFiles/projekt_final.dir/Application.cpp.o: ../Drawable.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../Light.h
+CMakeFiles/projekt_final.dir/Application.cpp.o: ../Object.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../OnChangeCameraObserver.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../OnChangeCameraSubject.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../OnChangeLightObserver.h
@@ -28,8 +28,8 @@ CMakeFiles/projekt_final.dir/Controller.cpp.o: ../Application.h
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../Camera.h
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../Controller.cpp
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../Controller.h
-CMakeFiles/projekt_final.dir/Controller.cpp.o: ../Drawable.h
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../Light.h
+CMakeFiles/projekt_final.dir/Controller.cpp.o: ../Object.h
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../OnChangeCameraObserver.h
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../OnChangeCameraSubject.h
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../OnChangeLightObserver.h
@@ -39,28 +39,12 @@ CMakeFiles/projekt_final.dir/Controller.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../ShaderLoader.h
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../opengl_helper.h
 
-CMakeFiles/projekt_final.dir/Drawable.cpp.o: ../Application.h
-CMakeFiles/projekt_final.dir/Drawable.cpp.o: ../Camera.h
-CMakeFiles/projekt_final.dir/Drawable.cpp.o: ../Controller.h
-CMakeFiles/projekt_final.dir/Drawable.cpp.o: ../Drawable.cpp
-CMakeFiles/projekt_final.dir/Drawable.cpp.o: ../Drawable.h
-CMakeFiles/projekt_final.dir/Drawable.cpp.o: ../Light.h
-CMakeFiles/projekt_final.dir/Drawable.cpp.o: ../OnChangeCameraObserver.h
-CMakeFiles/projekt_final.dir/Drawable.cpp.o: ../OnChangeCameraSubject.h
-CMakeFiles/projekt_final.dir/Drawable.cpp.o: ../OnChangeLightObserver.h
-CMakeFiles/projekt_final.dir/Drawable.cpp.o: ../OnChangeLightSubject.h
-CMakeFiles/projekt_final.dir/Drawable.cpp.o: ../Scene.h
-CMakeFiles/projekt_final.dir/Drawable.cpp.o: ../Shader.h
-CMakeFiles/projekt_final.dir/Drawable.cpp.o: ../ShaderLoader.h
-CMakeFiles/projekt_final.dir/Drawable.cpp.o: ../models/sphere.h
-CMakeFiles/projekt_final.dir/Drawable.cpp.o: ../opengl_helper.h
-
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../Application.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../Camera.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../Controller.h
-CMakeFiles/projekt_final.dir/Light.cpp.o: ../Drawable.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../Light.cpp
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../Light.h
+CMakeFiles/projekt_final.dir/Light.cpp.o: ../Object.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../OnChangeCameraObserver.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../OnChangeCameraSubject.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../OnChangeLightObserver.h
@@ -70,10 +54,26 @@ CMakeFiles/projekt_final.dir/Light.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../ShaderLoader.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../opengl_helper.h
 
+CMakeFiles/projekt_final.dir/Object.cpp.o: ../Application.h
+CMakeFiles/projekt_final.dir/Object.cpp.o: ../Camera.h
+CMakeFiles/projekt_final.dir/Object.cpp.o: ../Controller.h
+CMakeFiles/projekt_final.dir/Object.cpp.o: ../Light.h
+CMakeFiles/projekt_final.dir/Object.cpp.o: ../Object.cpp
+CMakeFiles/projekt_final.dir/Object.cpp.o: ../Object.h
+CMakeFiles/projekt_final.dir/Object.cpp.o: ../OnChangeCameraObserver.h
+CMakeFiles/projekt_final.dir/Object.cpp.o: ../OnChangeCameraSubject.h
+CMakeFiles/projekt_final.dir/Object.cpp.o: ../OnChangeLightObserver.h
+CMakeFiles/projekt_final.dir/Object.cpp.o: ../OnChangeLightSubject.h
+CMakeFiles/projekt_final.dir/Object.cpp.o: ../Scene.h
+CMakeFiles/projekt_final.dir/Object.cpp.o: ../Shader.h
+CMakeFiles/projekt_final.dir/Object.cpp.o: ../ShaderLoader.h
+CMakeFiles/projekt_final.dir/Object.cpp.o: ../models/sphere.h
+CMakeFiles/projekt_final.dir/Object.cpp.o: ../opengl_helper.h
+
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../Camera.h
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../Controller.h
-CMakeFiles/projekt_final.dir/Scene.cpp.o: ../Drawable.h
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../Light.h
+CMakeFiles/projekt_final.dir/Scene.cpp.o: ../Object.h
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../OnChangeCameraObserver.h
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../OnChangeCameraSubject.h
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../OnChangeLightObserver.h
@@ -101,8 +101,8 @@ CMakeFiles/projekt_final.dir/ShaderLoader.cpp.o: ../ShaderLoader.h
 CMakeFiles/projekt_final.dir/main.cpp.o: ../Application.h
 CMakeFiles/projekt_final.dir/main.cpp.o: ../Camera.h
 CMakeFiles/projekt_final.dir/main.cpp.o: ../Controller.h
-CMakeFiles/projekt_final.dir/main.cpp.o: ../Drawable.h
 CMakeFiles/projekt_final.dir/main.cpp.o: ../Light.h
+CMakeFiles/projekt_final.dir/main.cpp.o: ../Object.h
 CMakeFiles/projekt_final.dir/main.cpp.o: ../OnChangeCameraObserver.h
 CMakeFiles/projekt_final.dir/main.cpp.o: ../OnChangeCameraSubject.h
 CMakeFiles/projekt_final.dir/main.cpp.o: ../OnChangeLightObserver.h

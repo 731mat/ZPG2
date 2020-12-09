@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4
+CMAKE_SOURCE_DIR = /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/projekt_final.dir/depend.make
@@ -59,127 +59,127 @@ include CMakeFiles/projekt_final.dir/flags.make
 
 CMakeFiles/projekt_final.dir/Application.cpp.o: CMakeFiles/projekt_final.dir/flags.make
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../Application.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/projekt_final.dir/Application.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/Application.cpp.o -c /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Application.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/projekt_final.dir/Application.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/Application.cpp.o -c /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Application.cpp
 
 CMakeFiles/projekt_final.dir/Application.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projekt_final.dir/Application.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Application.cpp > CMakeFiles/projekt_final.dir/Application.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Application.cpp > CMakeFiles/projekt_final.dir/Application.cpp.i
 
 CMakeFiles/projekt_final.dir/Application.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt_final.dir/Application.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Application.cpp -o CMakeFiles/projekt_final.dir/Application.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Application.cpp -o CMakeFiles/projekt_final.dir/Application.cpp.s
 
 CMakeFiles/projekt_final.dir/Camera.cpp.o: CMakeFiles/projekt_final.dir/flags.make
 CMakeFiles/projekt_final.dir/Camera.cpp.o: ../Camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/projekt_final.dir/Camera.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/Camera.cpp.o -c /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/projekt_final.dir/Camera.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/Camera.cpp.o -c /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Camera.cpp
 
 CMakeFiles/projekt_final.dir/Camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projekt_final.dir/Camera.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Camera.cpp > CMakeFiles/projekt_final.dir/Camera.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Camera.cpp > CMakeFiles/projekt_final.dir/Camera.cpp.i
 
 CMakeFiles/projekt_final.dir/Camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt_final.dir/Camera.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Camera.cpp -o CMakeFiles/projekt_final.dir/Camera.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Camera.cpp -o CMakeFiles/projekt_final.dir/Camera.cpp.s
 
 CMakeFiles/projekt_final.dir/Controller.cpp.o: CMakeFiles/projekt_final.dir/flags.make
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../Controller.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/projekt_final.dir/Controller.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/Controller.cpp.o -c /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Controller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/projekt_final.dir/Controller.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/Controller.cpp.o -c /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Controller.cpp
 
 CMakeFiles/projekt_final.dir/Controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projekt_final.dir/Controller.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Controller.cpp > CMakeFiles/projekt_final.dir/Controller.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Controller.cpp > CMakeFiles/projekt_final.dir/Controller.cpp.i
 
 CMakeFiles/projekt_final.dir/Controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt_final.dir/Controller.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Controller.cpp -o CMakeFiles/projekt_final.dir/Controller.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Controller.cpp -o CMakeFiles/projekt_final.dir/Controller.cpp.s
 
-CMakeFiles/projekt_final.dir/Drawable.cpp.o: CMakeFiles/projekt_final.dir/flags.make
-CMakeFiles/projekt_final.dir/Drawable.cpp.o: ../Drawable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/projekt_final.dir/Drawable.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/Drawable.cpp.o -c /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Drawable.cpp
+CMakeFiles/projekt_final.dir/Object.cpp.o: CMakeFiles/projekt_final.dir/flags.make
+CMakeFiles/projekt_final.dir/Object.cpp.o: ../Object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/projekt_final.dir/Object.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/Object.cpp.o -c /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Object.cpp
 
-CMakeFiles/projekt_final.dir/Drawable.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projekt_final.dir/Drawable.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Drawable.cpp > CMakeFiles/projekt_final.dir/Drawable.cpp.i
+CMakeFiles/projekt_final.dir/Object.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projekt_final.dir/Object.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Object.cpp > CMakeFiles/projekt_final.dir/Object.cpp.i
 
-CMakeFiles/projekt_final.dir/Drawable.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt_final.dir/Drawable.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Drawable.cpp -o CMakeFiles/projekt_final.dir/Drawable.cpp.s
+CMakeFiles/projekt_final.dir/Object.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt_final.dir/Object.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Object.cpp -o CMakeFiles/projekt_final.dir/Object.cpp.s
 
 CMakeFiles/projekt_final.dir/Light.cpp.o: CMakeFiles/projekt_final.dir/flags.make
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../Light.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/projekt_final.dir/Light.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/Light.cpp.o -c /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Light.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/projekt_final.dir/Light.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/Light.cpp.o -c /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Light.cpp
 
 CMakeFiles/projekt_final.dir/Light.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projekt_final.dir/Light.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Light.cpp > CMakeFiles/projekt_final.dir/Light.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Light.cpp > CMakeFiles/projekt_final.dir/Light.cpp.i
 
 CMakeFiles/projekt_final.dir/Light.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt_final.dir/Light.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Light.cpp -o CMakeFiles/projekt_final.dir/Light.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Light.cpp -o CMakeFiles/projekt_final.dir/Light.cpp.s
 
 CMakeFiles/projekt_final.dir/main.cpp.o: CMakeFiles/projekt_final.dir/flags.make
 CMakeFiles/projekt_final.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/projekt_final.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/main.cpp.o -c /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/projekt_final.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/main.cpp.o -c /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/main.cpp
 
 CMakeFiles/projekt_final.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projekt_final.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/main.cpp > CMakeFiles/projekt_final.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/main.cpp > CMakeFiles/projekt_final.dir/main.cpp.i
 
 CMakeFiles/projekt_final.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt_final.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/main.cpp -o CMakeFiles/projekt_final.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/main.cpp -o CMakeFiles/projekt_final.dir/main.cpp.s
 
 CMakeFiles/projekt_final.dir/Shader.cpp.o: CMakeFiles/projekt_final.dir/flags.make
 CMakeFiles/projekt_final.dir/Shader.cpp.o: ../Shader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/projekt_final.dir/Shader.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/Shader.cpp.o -c /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/projekt_final.dir/Shader.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/Shader.cpp.o -c /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Shader.cpp
 
 CMakeFiles/projekt_final.dir/Shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projekt_final.dir/Shader.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Shader.cpp > CMakeFiles/projekt_final.dir/Shader.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Shader.cpp > CMakeFiles/projekt_final.dir/Shader.cpp.i
 
 CMakeFiles/projekt_final.dir/Shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt_final.dir/Shader.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Shader.cpp -o CMakeFiles/projekt_final.dir/Shader.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Shader.cpp -o CMakeFiles/projekt_final.dir/Shader.cpp.s
 
 CMakeFiles/projekt_final.dir/ShaderLoader.cpp.o: CMakeFiles/projekt_final.dir/flags.make
 CMakeFiles/projekt_final.dir/ShaderLoader.cpp.o: ../ShaderLoader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/projekt_final.dir/ShaderLoader.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/ShaderLoader.cpp.o -c /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/ShaderLoader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/projekt_final.dir/ShaderLoader.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/ShaderLoader.cpp.o -c /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/ShaderLoader.cpp
 
 CMakeFiles/projekt_final.dir/ShaderLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projekt_final.dir/ShaderLoader.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/ShaderLoader.cpp > CMakeFiles/projekt_final.dir/ShaderLoader.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/ShaderLoader.cpp > CMakeFiles/projekt_final.dir/ShaderLoader.cpp.i
 
 CMakeFiles/projekt_final.dir/ShaderLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt_final.dir/ShaderLoader.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/ShaderLoader.cpp -o CMakeFiles/projekt_final.dir/ShaderLoader.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/ShaderLoader.cpp -o CMakeFiles/projekt_final.dir/ShaderLoader.cpp.s
 
 CMakeFiles/projekt_final.dir/Scene.cpp.o: CMakeFiles/projekt_final.dir/flags.make
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../Scene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/projekt_final.dir/Scene.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/Scene.cpp.o -c /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/projekt_final.dir/Scene.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/Scene.cpp.o -c /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Scene.cpp
 
 CMakeFiles/projekt_final.dir/Scene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projekt_final.dir/Scene.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Scene.cpp > CMakeFiles/projekt_final.dir/Scene.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Scene.cpp > CMakeFiles/projekt_final.dir/Scene.cpp.i
 
 CMakeFiles/projekt_final.dir/Scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt_final.dir/Scene.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Scene.cpp -o CMakeFiles/projekt_final.dir/Scene.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Scene.cpp -o CMakeFiles/projekt_final.dir/Scene.cpp.s
 
 # Object files for target projekt_final
 projekt_final_OBJECTS = \
 "CMakeFiles/projekt_final.dir/Application.cpp.o" \
 "CMakeFiles/projekt_final.dir/Camera.cpp.o" \
 "CMakeFiles/projekt_final.dir/Controller.cpp.o" \
-"CMakeFiles/projekt_final.dir/Drawable.cpp.o" \
+"CMakeFiles/projekt_final.dir/Object.cpp.o" \
 "CMakeFiles/projekt_final.dir/Light.cpp.o" \
 "CMakeFiles/projekt_final.dir/main.cpp.o" \
 "CMakeFiles/projekt_final.dir/Shader.cpp.o" \
@@ -192,7 +192,7 @@ projekt_final_EXTERNAL_OBJECTS =
 projekt_final: CMakeFiles/projekt_final.dir/Application.cpp.o
 projekt_final: CMakeFiles/projekt_final.dir/Camera.cpp.o
 projekt_final: CMakeFiles/projekt_final.dir/Controller.cpp.o
-projekt_final: CMakeFiles/projekt_final.dir/Drawable.cpp.o
+projekt_final: CMakeFiles/projekt_final.dir/Object.cpp.o
 projekt_final: CMakeFiles/projekt_final.dir/Light.cpp.o
 projekt_final: CMakeFiles/projekt_final.dir/main.cpp.o
 projekt_final: CMakeFiles/projekt_final.dir/Shader.cpp.o
@@ -200,7 +200,7 @@ projekt_final: CMakeFiles/projekt_final.dir/ShaderLoader.cpp.o
 projekt_final: CMakeFiles/projekt_final.dir/Scene.cpp.o
 projekt_final: CMakeFiles/projekt_final.dir/build.make
 projekt_final: CMakeFiles/projekt_final.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable projekt_final"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable projekt_final"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/projekt_final.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -213,6 +213,6 @@ CMakeFiles/projekt_final.dir/clean:
 .PHONY : CMakeFiles/projekt_final.dir/clean
 
 CMakeFiles/projekt_final.dir/depend:
-	cd /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4 /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4 /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/CMakeFiles/projekt_final.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles/projekt_final.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/projekt_final.dir/depend
 

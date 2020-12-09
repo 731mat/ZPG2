@@ -59,10 +59,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4
+CMAKE_SOURCE_DIR = /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/projekt_final.dir
@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a47992
 CMakeFiles/projekt_final.dir/all:
 	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/depend
 	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target projekt_final"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target projekt_final"
 .PHONY : CMakeFiles/projekt_final.dir/all
 
 # Include target in all.
@@ -81,9 +81,9 @@ all: CMakeFiles/projekt_final.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/projekt_final.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/projekt_final.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/projekt_final.dir/rule
 
 # Convenience name for target.

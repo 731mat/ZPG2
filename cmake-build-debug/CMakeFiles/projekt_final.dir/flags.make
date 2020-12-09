@@ -6,5 +6,5 @@ CXX_FLAGS =  -framework OpenGL -I/usr/local/include -L/usr/local/lib -lglfw -pth
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/. -I/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/models 
+CXX_INCLUDES = -I/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/. -I/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/models 
 

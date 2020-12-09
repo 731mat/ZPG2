@@ -10,6 +10,7 @@ uniform vec3 lightArray[5];
 uniform sampler2D textura;
 out vec4 out_Color;
 
+const float cos_outer_cone_angle = 0.8;
 
 void main () {
 

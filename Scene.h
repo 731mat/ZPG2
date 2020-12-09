@@ -25,7 +25,7 @@
 #include "Shader.h"
 #include "Camera.h"
 #include "Controller.h"
-#include "Drawable.h"
+#include "Object.h"
 #include "Light.h"
 #include "opengl_helper.h"
 
@@ -34,9 +34,9 @@ private:
 
     Shader *lambert, *phong;
     Camera* camera;
-    Light* light;
-    Drawable* objLight;
-    std::vector<Drawable*> drawables;
+    Light* light, *light2;
+    Object* plane;
+    std::vector<Object*> objects;
 
     void createObj();
     void compileShaders();
@@ -47,6 +47,7 @@ public:
     Scene();
     ~Scene();
     void drawObj();
+    void addObj(double x, double y);
     void updateLight(Light* light);
     Camera* getCamera();
     Light* getLight();

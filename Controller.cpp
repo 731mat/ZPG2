@@ -2,6 +2,12 @@
 #include "Application.h"
 #include <cstdio>
 
+bool Controller::keys[1024] = {};
+bool Controller::mouseBut[11] = {};
+glm::vec2 Controller::mouseCur = glm::vec2(1.0f);
+bool Controller::moveMouse = false;
+
+
 void Controller::setController(GLFWwindow* window) {
 	//glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 	glfwSetKeyCallback(window, key_callback);
@@ -19,7 +25,7 @@ void Controller::key_callback(GLFWwindow* window, int key, int scancode, int act
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_RELEASE)
 		glfwSetWindowShouldClose(window, GL_TRUE);
 	//printf("key_callback [%d,%d,%d,%d] \n", key, scancode, action, mods);
-	Application::getWindow()->KeysClicked(key);
+	keys[key] = action;
 }
 
 void Controller::window_focus_callback(GLFWwindow* window, int focused){ printf("window_focus_callback \n"); }
@@ -34,8 +40,16 @@ void Controller::window_size_callback(GLFWwindow* window, int width, int height)
 void Controller::cursor_callback(GLFWwindow *window, double x, double y){
 	printf("cursor_callback \n");
 	Application::getWindow()->getScene()->getCamera()->cursorCallback(x, y);
+	mouseCur.x = x;
+	mouseCur.y = y;
 }
 
 void Controller::button_callback(GLFWwindow* window, int button, int action, int mode){
 	if (action == GLFW_PRESS) printf("button_callback [%d,%d,%d]\n", button, action, mode);
+	mouseBut[button] = action;
+}
+
+void Controller::identify() {
+
+
 }
