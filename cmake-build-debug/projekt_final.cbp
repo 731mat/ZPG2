@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="projekt_final"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="projekt_final">
+				<Option output="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/projekt_final" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/."/>
+					<Add directory="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/models"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/Makefile&quot;  VERBOSE=1 projekt_final"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="projekt_final/fast">
+				<Option output="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/projekt_final" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/."/>
+					<Add directory="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/models"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/Makefile&quot;  VERBOSE=1 projekt_final/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Application.cpp">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Application.h">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Camera.cpp">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Camera.h">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Controller.cpp">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Controller.h">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Drawable.cpp">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Drawable.h">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Light.cpp">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Light.h">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/OnChangeCameraObserver.h">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/OnChangeCameraSubject.h">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/OnChangeLightObserver.h">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/OnChangeLightSubject.h">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Scene.cpp">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Scene.h">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Shader.cpp">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/Shader.h">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/ShaderLoader.cpp">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/ShaderLoader.h">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/main.cpp">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/opengl_helper.h">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Downloads/ZPG-38153239cef054e4993c72a498a479924e79f0b4/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
