@@ -174,6 +174,71 @@ CMakeFiles/projekt_final.dir/Scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt_final.dir/Scene.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Scene.cpp -o CMakeFiles/projekt_final.dir/Scene.cpp.s
 
+CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: CMakeFiles/projekt_final.dir/flags.make
+CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../InputKeyboard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o -c /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/InputKeyboard.cpp
+
+CMakeFiles/projekt_final.dir/InputKeyboard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projekt_final.dir/InputKeyboard.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/InputKeyboard.cpp > CMakeFiles/projekt_final.dir/InputKeyboard.cpp.i
+
+CMakeFiles/projekt_final.dir/InputKeyboard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt_final.dir/InputKeyboard.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/InputKeyboard.cpp -o CMakeFiles/projekt_final.dir/InputKeyboard.cpp.s
+
+CMakeFiles/projekt_final.dir/InputMouse.cpp.o: CMakeFiles/projekt_final.dir/flags.make
+CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../InputMouse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/projekt_final.dir/InputMouse.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/InputMouse.cpp.o -c /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/InputMouse.cpp
+
+CMakeFiles/projekt_final.dir/InputMouse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projekt_final.dir/InputMouse.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/InputMouse.cpp > CMakeFiles/projekt_final.dir/InputMouse.cpp.i
+
+CMakeFiles/projekt_final.dir/InputMouse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt_final.dir/InputMouse.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/InputMouse.cpp -o CMakeFiles/projekt_final.dir/InputMouse.cpp.s
+
+CMakeFiles/projekt_final.dir/ObjectManager.cpp.o: CMakeFiles/projekt_final.dir/flags.make
+CMakeFiles/projekt_final.dir/ObjectManager.cpp.o: ../ObjectManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/projekt_final.dir/ObjectManager.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/ObjectManager.cpp.o -c /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/ObjectManager.cpp
+
+CMakeFiles/projekt_final.dir/ObjectManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projekt_final.dir/ObjectManager.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/ObjectManager.cpp > CMakeFiles/projekt_final.dir/ObjectManager.cpp.i
+
+CMakeFiles/projekt_final.dir/ObjectManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt_final.dir/ObjectManager.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/ObjectManager.cpp -o CMakeFiles/projekt_final.dir/ObjectManager.cpp.s
+
+CMakeFiles/projekt_final.dir/Mesh.cpp.o: CMakeFiles/projekt_final.dir/flags.make
+CMakeFiles/projekt_final.dir/Mesh.cpp.o: ../Mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/projekt_final.dir/Mesh.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/Mesh.cpp.o -c /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Mesh.cpp
+
+CMakeFiles/projekt_final.dir/Mesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projekt_final.dir/Mesh.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Mesh.cpp > CMakeFiles/projekt_final.dir/Mesh.cpp.i
+
+CMakeFiles/projekt_final.dir/Mesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt_final.dir/Mesh.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Mesh.cpp -o CMakeFiles/projekt_final.dir/Mesh.cpp.s
+
+CMakeFiles/projekt_final.dir/Vertex.cpp.o: CMakeFiles/projekt_final.dir/flags.make
+CMakeFiles/projekt_final.dir/Vertex.cpp.o: ../Vertex.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/projekt_final.dir/Vertex.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/Vertex.cpp.o -c /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Vertex.cpp
+
+CMakeFiles/projekt_final.dir/Vertex.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projekt_final.dir/Vertex.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Vertex.cpp > CMakeFiles/projekt_final.dir/Vertex.cpp.i
+
+CMakeFiles/projekt_final.dir/Vertex.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt_final.dir/Vertex.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Vertex.cpp -o CMakeFiles/projekt_final.dir/Vertex.cpp.s
+
 # Object files for target projekt_final
 projekt_final_OBJECTS = \
 "CMakeFiles/projekt_final.dir/Application.cpp.o" \
@@ -184,7 +249,12 @@ projekt_final_OBJECTS = \
 "CMakeFiles/projekt_final.dir/main.cpp.o" \
 "CMakeFiles/projekt_final.dir/Shader.cpp.o" \
 "CMakeFiles/projekt_final.dir/ShaderLoader.cpp.o" \
-"CMakeFiles/projekt_final.dir/Scene.cpp.o"
+"CMakeFiles/projekt_final.dir/Scene.cpp.o" \
+"CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o" \
+"CMakeFiles/projekt_final.dir/InputMouse.cpp.o" \
+"CMakeFiles/projekt_final.dir/ObjectManager.cpp.o" \
+"CMakeFiles/projekt_final.dir/Mesh.cpp.o" \
+"CMakeFiles/projekt_final.dir/Vertex.cpp.o"
 
 # External object files for target projekt_final
 projekt_final_EXTERNAL_OBJECTS =
@@ -198,9 +268,14 @@ projekt_final: CMakeFiles/projekt_final.dir/main.cpp.o
 projekt_final: CMakeFiles/projekt_final.dir/Shader.cpp.o
 projekt_final: CMakeFiles/projekt_final.dir/ShaderLoader.cpp.o
 projekt_final: CMakeFiles/projekt_final.dir/Scene.cpp.o
+projekt_final: CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o
+projekt_final: CMakeFiles/projekt_final.dir/InputMouse.cpp.o
+projekt_final: CMakeFiles/projekt_final.dir/ObjectManager.cpp.o
+projekt_final: CMakeFiles/projekt_final.dir/Mesh.cpp.o
+projekt_final: CMakeFiles/projekt_final.dir/Vertex.cpp.o
 projekt_final: CMakeFiles/projekt_final.dir/build.make
 projekt_final: CMakeFiles/projekt_final.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable projekt_final"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable projekt_final"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/projekt_final.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

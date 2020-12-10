@@ -40,9 +40,9 @@ void Shader::updateCamera(Camera* camera) {
 	//printf("update camera\n");
 
 	glm::vec3 cam = camera->getEye();
-	glUniformMatrix4fv(viewMatrixID, 1, GL_FALSE, &camera->getCamera()[0][0]);
+	glUniformMatrix4fv(viewMatrixID, 1, GL_FALSE, &camera->getView()[0][0]);
 	glUniformMatrix4fv(projectMatrixID, 1, GL_FALSE, &camera->getProjection()[0][0]);
-	printf("%f, %f, %f\n", camera->getPosX(),camera->getPosY(), camera->getPosZ());
+	//printf("%f, %f, %f\n", camera->getPosX(),camera->getPosY(), camera->getPosZ());
 
 	glUniform3f(viewPositionID,cam.x, cam.y, cam.z);
 }

@@ -8,6 +8,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/projekt_final.dir/Shader.cpp.o"
   "CMakeFiles/projekt_final.dir/ShaderLoader.cpp.o"
   "CMakeFiles/projekt_final.dir/Scene.cpp.o"
+  "CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o"
+  "CMakeFiles/projekt_final.dir/InputMouse.cpp.o"
+  "CMakeFiles/projekt_final.dir/ObjectManager.cpp.o"
+  "CMakeFiles/projekt_final.dir/Mesh.cpp.o"
+  "CMakeFiles/projekt_final.dir/Vertex.cpp.o"
   "projekt_final.pdb"
   "projekt_final"
 )

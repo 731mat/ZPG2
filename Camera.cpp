@@ -44,7 +44,7 @@ glm::mat4 Camera::getProjection(){
 	return glm::perspective(45.f, 4.0f / 3.0f, 0.1f, 100.0f);
 }
 
- glm::mat4 Camera::getCamera(void){
+ glm::mat4 Camera::getView(void){
 	 return glm::lookAt(eye, eye + center, UP);
  }
 

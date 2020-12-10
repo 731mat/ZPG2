@@ -4,17 +4,19 @@
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 #include "Camera.h"
+#include "InputMouse.h"
+#include "InputKeyboard.h"
 
 class Controller {
-private:
+
+protected:
 	static bool moveMouse;
 public:
 	Controller();
 	~Controller();
 
-	static bool keys[];
-	static bool mouseBut[];
-	static glm::vec2 mouseCur;
+    InputMouse* mouse;
+    InputKeyboard* keyboard;
 
 	static void identify();
 

@@ -11,22 +11,20 @@
 #include <glm/gtc/matrix_transform.hpp> // glm::translate, glm::rotate, glm::scale, glm::perspective
 #include <glm/gtc/type_ptr.hpp> // glm::value_ptr
 #include "Shader.h"
+#include "Mesh.h"
 
-
+class Shader;
+class Mesh;
 class Object {
 private:
 	glm::mat4 model;
+	Mesh* mesh;
 	Shader* shader;
-	static int objects;
-	GLuint VAO;
-	GLuint VBO;
 
 public:
-	Object(Shader* shader, glm::vec3 setPosition, glm::vec3 setScale);
+	Object(Mesh* mesh, Shader* shader, glm::vec3 setPosition, glm::vec3 setScale);
 	~Object();
 	void setPosition(glm::vec3 position);
 	void draw();
-	void renderObject();
-	GLint getID();
 };
 #endif //PROJEKT_FINAL_OBJECT_H

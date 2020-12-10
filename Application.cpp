@@ -21,6 +21,7 @@ Application::Application(int width, int height, const char* title) {
 	// nutne udelat downgrade macbook
     this->setVerGL();
 
+
     window = glfwCreateWindow(width, height, title, NULL, NULL);
 
 	if (!window)
@@ -31,21 +32,21 @@ Application::Application(int width, int height, const char* title) {
 
 	glfwMakeContextCurrent(window);
 	glfwSwapInterval(1);
-	
+	controller = new Controller();
+
 	glfwSetErrorCallback(controller->error_callback);
 
 	// start GLEW extension handler
 	glewExperimental = GL_TRUE;
 	glewInit();
-	glEnable(GL_DEPTH_TEST);
-	glEnable(GL_STENCIL_TEST);
+
 
 	int fwidth = 800, fheight = 600;
 	float ratio = fwidth / (float)fheight;
 	glViewport(0, 0, fwidth, fheight);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
-	glOrtho(-ratio, ratio, -1.f, 1.f, 1.f, -1.f);
+	//glOrtho(-ratio, ratio, -1.f, 1.f, 1.f, -1.f);
 
 	GL_CHECK_ERRORS();
 	glGetError();
@@ -57,6 +58,8 @@ Application::Application(int width, int height, const char* title) {
 
 Application::~Application() {
 	delete scene;
+	delete controller;
+	delete objectInstance;
 	glfwDestroyWindow(window);
 	glfwTerminate();
 }
@@ -65,79 +68,24 @@ Application::~Application() {
 void Application::mainloop() {
 
 	glEnable(GL_DEPTH_TEST);
+	glEnable(GL_STENCIL_TEST);
+	//glEnable(GL_TEXTURE_CUBE_MAP_SEAMLESS);
+	glStencilOp(GL_KEEP, GL_KEEP, GL_REPLACE);
+
+
+
+
+
 	while (!glfwWindowShouldClose(window))
 	{
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-		keysClicked();
-		mouseClick();
+		controller->keyboard->keysClicked();
+		controller->mouse->buttonClicked();
 		scene->drawObj();
 		glfwPollEvents();
 		glfwSwapBuffers(window);
 	}
 }
 
-
-void Application::keysClicked() {
-	if (Controller::keys[87] == true)
-	{
-		scene->getCamera()->moveForward();
-	}
-	if (Controller::keys[83] == true)
-	{
-		scene->getCamera()->moveBack();
-	}
-	if (Controller::keys[65] == true)
-	{
-		scene->getCamera()->moveLeft();
-	}
-	if (Controller::keys[68] == true)
-	{
-		scene->getCamera()->moveRight();
-	}
-	if (Controller::keys[264] == true)
-	{
-		scene->getLight()->move(glm::vec3(0.0f, -0.5f, 0.0f));
-	}
-	if (Controller::keys[265] == true)
-	{
-		scene->getLight()->move(glm::vec3(0.0f, 0.5f, 0.0f));
-	}
-	if (Controller::keys[263] == true)
-	{
-		scene->getLight()->move(glm::vec3(-0.5f, 0.0f, 0.0f));
-	}
-	if (Controller::keys[262] == true)
-	{
-		scene->getLight()->move(glm::vec3(0.5f, 0.0f, 0.0f));
-	}
-	if (Controller::keys[77] == true)
-	{
-		scene->getLight()->move(glm::vec3(0.0f, 0.0f, 0.5f));
-	}
-	if (Controller::keys[78] == true)
-	{
-		scene->getLight()->move(glm::vec3(0.0f, 0.0f, -0.5f));
-	}
-	/*if (Controller::keys[87] == true)
-	{
-		scene->getCamera()->moveForward();
-	}
-	if (Controller::keys[87] == true)
-	{
-		scene->getCamera()->moveForward();
-
-	}*/
-
-}
-
-void Application::mouseClick() {
-	if (Controller::mouseBut[1] == true)
-		scene->getCamera()->cursorCallback(Controller::mouseCur.x, Controller::mouseCur.y);
-	if (Controller::mouseBut[0] == true)
-		scene->addObj(Controller::mouseCur.x, Controller::mouseCur.y);
-
-
-}
 
 void Application::setVerGL() {
 

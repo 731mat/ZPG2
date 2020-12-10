@@ -204,6 +204,60 @@ Controller.cpp.s:
 	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Controller.cpp.s
 .PHONY : Controller.cpp.s
 
+InputKeyboard.o: InputKeyboard.cpp.o
+
+.PHONY : InputKeyboard.o
+
+# target to build an object file
+InputKeyboard.cpp.o:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o
+.PHONY : InputKeyboard.cpp.o
+
+InputKeyboard.i: InputKeyboard.cpp.i
+
+.PHONY : InputKeyboard.i
+
+# target to preprocess a source file
+InputKeyboard.cpp.i:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/InputKeyboard.cpp.i
+.PHONY : InputKeyboard.cpp.i
+
+InputKeyboard.s: InputKeyboard.cpp.s
+
+.PHONY : InputKeyboard.s
+
+# target to generate assembly for a file
+InputKeyboard.cpp.s:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/InputKeyboard.cpp.s
+.PHONY : InputKeyboard.cpp.s
+
+InputMouse.o: InputMouse.cpp.o
+
+.PHONY : InputMouse.o
+
+# target to build an object file
+InputMouse.cpp.o:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/InputMouse.cpp.o
+.PHONY : InputMouse.cpp.o
+
+InputMouse.i: InputMouse.cpp.i
+
+.PHONY : InputMouse.i
+
+# target to preprocess a source file
+InputMouse.cpp.i:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/InputMouse.cpp.i
+.PHONY : InputMouse.cpp.i
+
+InputMouse.s: InputMouse.cpp.s
+
+.PHONY : InputMouse.s
+
+# target to generate assembly for a file
+InputMouse.cpp.s:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/InputMouse.cpp.s
+.PHONY : InputMouse.cpp.s
+
 Light.o: Light.cpp.o
 
 .PHONY : Light.o
@@ -231,6 +285,33 @@ Light.cpp.s:
 	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Light.cpp.s
 .PHONY : Light.cpp.s
 
+Mesh.o: Mesh.cpp.o
+
+.PHONY : Mesh.o
+
+# target to build an object file
+Mesh.cpp.o:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Mesh.cpp.o
+.PHONY : Mesh.cpp.o
+
+Mesh.i: Mesh.cpp.i
+
+.PHONY : Mesh.i
+
+# target to preprocess a source file
+Mesh.cpp.i:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Mesh.cpp.i
+.PHONY : Mesh.cpp.i
+
+Mesh.s: Mesh.cpp.s
+
+.PHONY : Mesh.s
+
+# target to generate assembly for a file
+Mesh.cpp.s:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Mesh.cpp.s
+.PHONY : Mesh.cpp.s
+
 Object.o: Object.cpp.o
 
 .PHONY : Object.o
@@ -257,6 +338,33 @@ Object.s: Object.cpp.s
 Object.cpp.s:
 	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Object.cpp.s
 .PHONY : Object.cpp.s
+
+ObjectManager.o: ObjectManager.cpp.o
+
+.PHONY : ObjectManager.o
+
+# target to build an object file
+ObjectManager.cpp.o:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/ObjectManager.cpp.o
+.PHONY : ObjectManager.cpp.o
+
+ObjectManager.i: ObjectManager.cpp.i
+
+.PHONY : ObjectManager.i
+
+# target to preprocess a source file
+ObjectManager.cpp.i:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/ObjectManager.cpp.i
+.PHONY : ObjectManager.cpp.i
+
+ObjectManager.s: ObjectManager.cpp.s
+
+.PHONY : ObjectManager.s
+
+# target to generate assembly for a file
+ObjectManager.cpp.s:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/ObjectManager.cpp.s
+.PHONY : ObjectManager.cpp.s
 
 Scene.o: Scene.cpp.o
 
@@ -339,6 +447,33 @@ ShaderLoader.cpp.s:
 	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/ShaderLoader.cpp.s
 .PHONY : ShaderLoader.cpp.s
 
+Vertex.o: Vertex.cpp.o
+
+.PHONY : Vertex.o
+
+# target to build an object file
+Vertex.cpp.o:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Vertex.cpp.o
+.PHONY : Vertex.cpp.o
+
+Vertex.i: Vertex.cpp.i
+
+.PHONY : Vertex.i
+
+# target to preprocess a source file
+Vertex.cpp.i:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Vertex.cpp.i
+.PHONY : Vertex.cpp.i
+
+Vertex.s: Vertex.cpp.s
+
+.PHONY : Vertex.s
+
+# target to generate assembly for a file
+Vertex.cpp.s:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Vertex.cpp.s
+.PHONY : Vertex.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -384,12 +519,24 @@ help:
 	@echo "... Controller.o"
 	@echo "... Controller.i"
 	@echo "... Controller.s"
+	@echo "... InputKeyboard.o"
+	@echo "... InputKeyboard.i"
+	@echo "... InputKeyboard.s"
+	@echo "... InputMouse.o"
+	@echo "... InputMouse.i"
+	@echo "... InputMouse.s"
 	@echo "... Light.o"
 	@echo "... Light.i"
 	@echo "... Light.s"
+	@echo "... Mesh.o"
+	@echo "... Mesh.i"
+	@echo "... Mesh.s"
 	@echo "... Object.o"
 	@echo "... Object.i"
 	@echo "... Object.s"
+	@echo "... ObjectManager.o"
+	@echo "... ObjectManager.i"
+	@echo "... ObjectManager.s"
 	@echo "... Scene.o"
 	@echo "... Scene.i"
 	@echo "... Scene.s"
@@ -399,6 +546,9 @@ help:
 	@echo "... ShaderLoader.o"
 	@echo "... ShaderLoader.i"
 	@echo "... ShaderLoader.s"
+	@echo "... Vertex.o"
+	@echo "... Vertex.i"
+	@echo "... Vertex.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

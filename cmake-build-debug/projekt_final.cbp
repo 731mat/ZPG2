@@ -102,16 +102,40 @@
 		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Controller.h">
 			<Option target="projekt_final"/>
 		</Unit>
+		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/InputKeyboard.cpp">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/InputKeyboard.h">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/InputMouse.cpp">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/InputMouse.h">
+			<Option target="projekt_final"/>
+		</Unit>
 		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Light.cpp">
 			<Option target="projekt_final"/>
 		</Unit>
 		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Light.h">
 			<Option target="projekt_final"/>
 		</Unit>
+		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Mesh.cpp">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Mesh.h">
+			<Option target="projekt_final"/>
+		</Unit>
 		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Object.cpp">
 			<Option target="projekt_final"/>
 		</Unit>
 		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Object.h">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/ObjectManager.cpp">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/ObjectManager.h">
 			<Option target="projekt_final"/>
 		</Unit>
 		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/OnChangeCameraObserver.h">
@@ -142,6 +166,12 @@
 			<Option target="projekt_final"/>
 		</Unit>
 		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/ShaderLoader.h">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Vertex.cpp">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Vertex.h">
 			<Option target="projekt_final"/>
 		</Unit>
 		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/main.cpp">
