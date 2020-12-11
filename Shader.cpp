@@ -69,9 +69,5 @@ void Shader::setModelMatrix(glm::mat4 matrix) {
 
 
 
-void Shader::shaderRotate(float rotationx) {
-	glm::mat4 r = glm::rotate(glm::mat4(1.0f), glm::radians(rotationx), glm::vec3(0.0f, 1.0f, 0.0f));
-	glUniformMatrix4fv(matrixID, 1, GL_FALSE, &r[0][0]);
-}
 
 

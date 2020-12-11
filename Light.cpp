@@ -1,12 +1,12 @@
 #include "Light.h"
 #include "Application.h"
 
-Light::Light(Shader* shader, ObjectManager* objManager) {
+Light::Light(Shader* shader, MeshManager* mshManager) {
 
 	x = 0.0f;
 	y = 0.0f;
 	z = 0.0f;
-	objLig = new Object(objManager->getMesh("sphere"), shader, getPosition(), glm::vec3(0.5, 0.5, 0.5));
+	objLig = new Object(mshManager->getMesh("sphere"), shader, getPosition(), glm::vec3(0.5, 0.5, 0.5));
 }
 Light::Light(float x, float y, float z) {
 	this->x = x;

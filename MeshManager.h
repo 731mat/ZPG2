@@ -9,17 +9,21 @@
 #include <map>
 #include "Object.h"
 #include "Mesh.h"
+#include "Model.h"
 
-
-class ObjectManager
+class Model;
+class MeshManager
 {
 private:
     std::map< std::string, Mesh> models;
+    std::map< std::string, Model> objModels;
 public:
     Mesh* getMesh(std::string name);
     void setMesh(std::string name, Mesh* mesh);
-    ObjectManager();
-    ~ObjectManager();
+    Model* getObj(std::string name);
+    void setObj(std::string name, Model* model);
+    MeshManager();
+    ~MeshManager();
 };
 
 

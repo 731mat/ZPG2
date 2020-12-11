@@ -22,10 +22,10 @@
 #include "models/suzi_flat.h"
 #include "models/worker.h"
 //#include "models/plane.h"
-#include "models/jump.h"
+//#include "models/jump.h"
+#include "Drawable.h"
 
-
-class Mesh
+class Mesh: public Drawable
 {
 private:
     GLuint VAO;
@@ -33,9 +33,10 @@ private:
     GLenum type;
     GLsizei count;
     Vertex * vertices;
+    string name;
     static int drawables;
 public:
-    Mesh(GLenum type, Vertex * vertices, float count);
+    Mesh(GLenum type, Vertex * vertices, float count, string name);
     Mesh();
     ~Mesh();
     void draw();

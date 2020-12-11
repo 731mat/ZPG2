@@ -7,12 +7,12 @@
 
 Scene::Scene() {
     compileShaders();
-    objManager = new ObjectManager;
+    mshManager = new MeshManager;
 
-    //texture->loadTexture(phong);
+    texture->loadTexture(phong);
 
     camera = new Camera;
-    light = new Light(lambert, objManager);
+    light = new Light(lambert, mshManager);
     light2 = new Light(20, 0, -50);
     lights.push_back(light);
     lights.push_back(light2);
@@ -25,19 +25,23 @@ Scene::Scene() {
     camera->registerObserver((OnChangeCameraObserver*)lambert);
     camera->registerObserver((OnChangeCameraObserver*)phong);
 
-    objManager->setMesh("sphere", new Mesh(GL_TRIANGLES, sphereVertices, sphereCount));
-    objManager->setMesh("worker", new Mesh(GL_TRIANGLES, workerVertices, workerCount));
-    objManager->setMesh("box", new Mesh(GL_TRIANGLES, boxVertices, boxCount));
-    objManager->setMesh("suzi", new Mesh(GL_TRIANGLES, suziVertices, suziCount));
-    objManager->setMesh("jumper", new Mesh(GL_TRIANGLES, jumpVertices, jumpCount));
-    //objManager->setMesh("plane", new Mesh(GL_TRIANGLES, plane , 10));
+    //mshManager->setObj("tree", new Model("models/pine.lwo"));
 
 
-    objects.push_back(new Object(objManager->getMesh("sphere"), phong, glm::vec3(0, 2, 0), glm::vec3(1, 1, 1)));
-    //objects.push_back(new Object(objManager->getMesh("worker"), phong, glm::vec3(0, -2, 0), glm::vec3(1, 1, 1)));
-    //objects.push_back(new Object(objManager->getMesh("jumper"), phong, glm::vec3(-2, 0, 0), glm::vec3(1, 1, 1)));
-    //objects.push_back(new Object(objManager->getMesh("suzi"), phong, glm::vec3(2, 0, 0), glm::vec3(1, 1, 1)));
-    //objects.push_back(new Object(objManager->getMesh("plane"), phong, glm::vec3(0, -3, 0), glm::vec3(100, 1, 1)));
+    mshManager->setMesh("sphere", new Mesh(GL_TRIANGLES, sphereVertices, sphereCount,"sphere"));
+    mshManager->setMesh("worker", new Mesh(GL_TRIANGLES, workerVertices, workerCount,"worker"));
+    mshManager->setMesh("box", new Mesh(GL_TRIANGLES, boxVertices, boxCount,"box"));
+    mshManager->setMesh("suzi", new Mesh(GL_TRIANGLES, suziVertices, suziCount,"suzi"));
+    //mshManager->setMesh("jumper", new Mesh(GL_TRIANGLES, jumpVertices, jumpCount,"jumper"));
+    //mshManager->setMesh("plane", new Mesh(GL_TRIANGLES, plane , 10));
+
+    objects.push_back(new Object(new Model("../models/fels.3ds"), phong, glm::vec3(0, 2, 0), glm::vec3(1, 1, 1)));
+
+    objects.push_back(new Object(mshManager->getMesh("sphere"), phong, glm::vec3(0, 2, 0), glm::vec3(1, 1, 1)));
+    objects.push_back(new Object(mshManager->getMesh("worker"), phong, glm::vec3(0, -2, 0), glm::vec3(1, 1, 1)));
+    //objects.push_back(new Object(mshManager->getMesh("jumper"), phong, glm::vec3(-2, 0, 0), glm::vec3(1, 1, 1)));
+    objects.push_back(new Object(mshManager->getMesh("suzi"), phong, glm::vec3(2, 0, 0), glm::vec3(1, 1, 1)));
+    //objects.push_back(new Object(mshManager->getMesh("plane"), phong, glm::vec3(0, -3, 0), glm::vec3(100, 1, 1)));
 
 
 
@@ -51,8 +55,14 @@ Scene::~Scene() {
     delete light;
     delete light2;
     delete camera;
+
+    delete mshManager;
+    delete texture;
+
     for (unsigned int i = 0; i < objects.size(); i++)
         delete objects[i];
+
+    delete this;
 }
 
 
@@ -113,7 +123,7 @@ void Scene::addObj(bool plant)
         glm::mat4 projection = getCamera()->getProjection();
         glm::vec4 viewPort = glm::vec4(0, 0, width, height);
         glm::vec3 pos = glm::unProject(screenX, view, projection, viewPort);
-        objects.push_back(new Object(objManager->getMesh("box"), phong, glm::vec3(pos.x, pos.y, pos.z), glm::vec3(1, 1, 1)));
+        objects.push_back(new Object(mshManager->getMesh("box"), phong, glm::vec3(pos.x, pos.y, pos.z), glm::vec3(1, 1, 1)));
         printf("unProject[%f, %f, %f]\n", pos.x, pos.y, pos.z);
     }
 }
@@ -139,6 +149,12 @@ void Scene::moveObj(glm::vec3 position)
         objects[index - 1]->setPosition(position);
 }
 
+void Scene::rotObj(float rotateX)
+{
+    if (index != 0)
+        objects[index - 1]->rotate(rotateX);
+}
+
 
 
 
@@ -152,7 +168,7 @@ Camera* Scene::getCamera() {
 Light* Scene::getLight() {
     return light;
 }
-ObjectManager* Scene::getObjMan()
+MeshManager* Scene::getObjMan()
 {
-    return objManager;
+    return mshManager;
 }

@@ -10,10 +10,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/projekt_final.dir/Scene.cpp.o"
   "CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o"
   "CMakeFiles/projekt_final.dir/InputMouse.cpp.o"
-  "CMakeFiles/projekt_final.dir/ObjectManager.cpp.o"
+  "CMakeFiles/projekt_final.dir/MeshManager.cpp.o"
   "CMakeFiles/projekt_final.dir/Mesh.cpp.o"
   "CMakeFiles/projekt_final.dir/Vertex.cpp.o"
   "CMakeFiles/projekt_final.dir/Texture.cpp.o"
+  "CMakeFiles/projekt_final.dir/Drawable.cpp.o"
+  "CMakeFiles/projekt_final.dir/Model.cpp.o"
   "projekt_final.pdb"
   "projekt_final"
 )

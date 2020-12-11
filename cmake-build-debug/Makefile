@@ -204,6 +204,33 @@ Controller.cpp.s:
 	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Controller.cpp.s
 .PHONY : Controller.cpp.s
 
+Drawable.o: Drawable.cpp.o
+
+.PHONY : Drawable.o
+
+# target to build an object file
+Drawable.cpp.o:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Drawable.cpp.o
+.PHONY : Drawable.cpp.o
+
+Drawable.i: Drawable.cpp.i
+
+.PHONY : Drawable.i
+
+# target to preprocess a source file
+Drawable.cpp.i:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Drawable.cpp.i
+.PHONY : Drawable.cpp.i
+
+Drawable.s: Drawable.cpp.s
+
+.PHONY : Drawable.s
+
+# target to generate assembly for a file
+Drawable.cpp.s:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Drawable.cpp.s
+.PHONY : Drawable.cpp.s
+
 InputKeyboard.o: InputKeyboard.cpp.o
 
 .PHONY : InputKeyboard.o
@@ -312,6 +339,60 @@ Mesh.cpp.s:
 	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Mesh.cpp.s
 .PHONY : Mesh.cpp.s
 
+MeshManager.o: MeshManager.cpp.o
+
+.PHONY : MeshManager.o
+
+# target to build an object file
+MeshManager.cpp.o:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/MeshManager.cpp.o
+.PHONY : MeshManager.cpp.o
+
+MeshManager.i: MeshManager.cpp.i
+
+.PHONY : MeshManager.i
+
+# target to preprocess a source file
+MeshManager.cpp.i:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/MeshManager.cpp.i
+.PHONY : MeshManager.cpp.i
+
+MeshManager.s: MeshManager.cpp.s
+
+.PHONY : MeshManager.s
+
+# target to generate assembly for a file
+MeshManager.cpp.s:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/MeshManager.cpp.s
+.PHONY : MeshManager.cpp.s
+
+Model.o: Model.cpp.o
+
+.PHONY : Model.o
+
+# target to build an object file
+Model.cpp.o:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Model.cpp.o
+.PHONY : Model.cpp.o
+
+Model.i: Model.cpp.i
+
+.PHONY : Model.i
+
+# target to preprocess a source file
+Model.cpp.i:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Model.cpp.i
+.PHONY : Model.cpp.i
+
+Model.s: Model.cpp.s
+
+.PHONY : Model.s
+
+# target to generate assembly for a file
+Model.cpp.s:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Model.cpp.s
+.PHONY : Model.cpp.s
+
 Object.o: Object.cpp.o
 
 .PHONY : Object.o
@@ -338,33 +419,6 @@ Object.s: Object.cpp.s
 Object.cpp.s:
 	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Object.cpp.s
 .PHONY : Object.cpp.s
-
-ObjectManager.o: ObjectManager.cpp.o
-
-.PHONY : ObjectManager.o
-
-# target to build an object file
-ObjectManager.cpp.o:
-	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/ObjectManager.cpp.o
-.PHONY : ObjectManager.cpp.o
-
-ObjectManager.i: ObjectManager.cpp.i
-
-.PHONY : ObjectManager.i
-
-# target to preprocess a source file
-ObjectManager.cpp.i:
-	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/ObjectManager.cpp.i
-.PHONY : ObjectManager.cpp.i
-
-ObjectManager.s: ObjectManager.cpp.s
-
-.PHONY : ObjectManager.s
-
-# target to generate assembly for a file
-ObjectManager.cpp.s:
-	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/ObjectManager.cpp.s
-.PHONY : ObjectManager.cpp.s
 
 Scene.o: Scene.cpp.o
 
@@ -546,6 +600,9 @@ help:
 	@echo "... Controller.o"
 	@echo "... Controller.i"
 	@echo "... Controller.s"
+	@echo "... Drawable.o"
+	@echo "... Drawable.i"
+	@echo "... Drawable.s"
 	@echo "... InputKeyboard.o"
 	@echo "... InputKeyboard.i"
 	@echo "... InputKeyboard.s"
@@ -558,12 +615,15 @@ help:
 	@echo "... Mesh.o"
 	@echo "... Mesh.i"
 	@echo "... Mesh.s"
+	@echo "... MeshManager.o"
+	@echo "... MeshManager.i"
+	@echo "... MeshManager.s"
+	@echo "... Model.o"
+	@echo "... Model.i"
+	@echo "... Model.s"
 	@echo "... Object.o"
 	@echo "... Object.i"
 	@echo "... Object.s"
-	@echo "... ObjectManager.o"
-	@echo "... ObjectManager.i"
-	@echo "... ObjectManager.s"
 	@echo "... Scene.o"
 	@echo "... Scene.i"
 	@echo "... Scene.s"

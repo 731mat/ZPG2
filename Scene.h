@@ -28,7 +28,7 @@
 #include "Object.h"
 #include "Light.h"
 #include "opengl_helper.h"
-#include "ObjectManager.h"
+#include "MeshManager.h"
 #include "Texture.h"
 
 class Scene : public OnChangeLightObserver{
@@ -40,7 +40,7 @@ private:
     Texture* texture;
     std::vector<Object*> objects;
 
-    ObjectManager* objManager;
+    MeshManager* mshManager;
     GLuint index;
 
     void createObj();
@@ -55,11 +55,12 @@ public:
     void addObj(bool plant = false);
     void delObj();
     void moveObj(glm::vec3 position);
+    void rotObj(float rotateX);
 
     void updateLight(Light* light);
     Camera* getCamera();
     Light* getLight();
-    ObjectManager* getObjMan();
+    MeshManager* getObjMan();
 };
 
 

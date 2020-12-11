@@ -76,6 +76,8 @@ InputMouse.h
 InputKeyboard.h
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/InputKeyboard.h
 
+/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Drawable.h
+
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/InputKeyboard.h
 
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/InputMouse.h
@@ -101,8 +103,10 @@ string
 -
 OnChangeLightSubject.h
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/OnChangeLightSubject.h
-ObjectManager.h
-/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/ObjectManager.h
+MeshManager.h
+/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/MeshManager.h
+Drawable.h
+/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Drawable.h
 
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Mesh.h
 map
@@ -133,8 +137,44 @@ models/suzi_flat.h
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/models/suzi_flat.h
 models/worker.h
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/models/worker.h
-models/jump.h
-/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/models/jump.h
+Drawable.h
+/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Drawable.h
+
+/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/MeshManager.h
+map
+-
+Object.h
+/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Object.h
+Mesh.h
+/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Mesh.h
+Model.h
+/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Model.h
+
+/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Model.h
+map
+-
+GL/glew.h
+-
+GLFW/glfw3.h
+-
+glm/vec3.hpp
+-
+glm/vec4.hpp
+-
+glm/mat4x4.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+glm/gtc/type_ptr.hpp
+-
+assimp/Importer.hpp
+-
+assimp/scene.h
+-
+assimp/postprocess.h
+-
+Drawable.h
+/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Drawable.h
 
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Object.h
 GL/glew.h
@@ -155,14 +195,8 @@ Shader.h
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Shader.h
 Mesh.h
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Mesh.h
-
-/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/ObjectManager.h
-map
--
-Object.h
-/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Object.h
-Mesh.h
-/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Mesh.h
+Model.h
+/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Model.h
 
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/OnChangeCameraObserver.h
 glm/mat4x4.hpp
@@ -233,8 +267,8 @@ Light.h
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Light.h
 opengl_helper.h
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/opengl_helper.h
-ObjectManager.h
-/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/ObjectManager.h
+MeshManager.h
+/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/MeshManager.h
 Texture.h
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Texture.h
 
@@ -297,12 +331,6 @@ SOIL/SOIL.h
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Vertex.h
 
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/models/bedna.h
-../Vertex.h
-/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Vertex.h
-
-/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/models/jump.h
-C:/objtoh/Jump.h
-C:/objtoh/Jump.h
 ../Vertex.h
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Vertex.h
 
