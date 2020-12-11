@@ -44,9 +44,9 @@ void Controller::window_size_callback(GLFWwindow* window, int width, int height)
 }
 
 void Controller::cursor_callback(GLFWwindow *window, double x, double y){
-	//printf("cursor_callback \n");
-	InputMouse::mouseCursor.x = x;
-	InputMouse::mouseCursor.y = y;
+
+	InputMouse::getInputMouse()->mouseCursor.x = (int)x;
+	InputMouse::getInputMouse()->mouseCursor.y = (int)y;
 }
 
 void Controller::button_callback(GLFWwindow* window, int button, int action, int mode){

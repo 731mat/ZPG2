@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/projekt_final.dir/ObjectManager.cpp.o"
   "CMakeFiles/projekt_final.dir/Mesh.cpp.o"
   "CMakeFiles/projekt_final.dir/Vertex.cpp.o"
+  "CMakeFiles/projekt_final.dir/Texture.cpp.o"
   "projekt_final.pdb"
   "projekt_final"
 )

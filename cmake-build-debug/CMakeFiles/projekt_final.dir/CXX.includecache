@@ -235,6 +235,8 @@ opengl_helper.h
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/opengl_helper.h
 ObjectManager.h
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/ObjectManager.h
+Texture.h
+/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Texture.h
 
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Shader.h
 ShaderLoader.h
@@ -268,6 +270,28 @@ fstream
 iostream
 -
 sstream
+-
+
+/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Texture.h
+GL/glew.h
+-
+GLFW/glfw3.h
+-
+cstdio
+-
+string
+-
+glm/vec3.hpp
+-
+glm/vec4.hpp
+-
+glm/mat4x4.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+glm/gtc/type_ptr.hpp
+-
+SOIL/SOIL.h
 -
 
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Vertex.h

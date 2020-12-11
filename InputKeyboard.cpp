@@ -59,7 +59,7 @@ void InputKeyboard::keysClicked() {
     }
     if (keys[80] == true)
     {
-        Application::getWindow()->getScene()->addObj(InputMouse::mouseCursor.x, InputMouse::mouseCursor.y, true);
+        Application::getWindow()->getScene()->addObj(true);
     }
     if (keys[79] == true)
     {

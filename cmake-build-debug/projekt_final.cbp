@@ -168,6 +168,12 @@
 		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/ShaderLoader.h">
 			<Option target="projekt_final"/>
 		</Unit>
+		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Texture.cpp">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Texture.h">
+			<Option target="projekt_final"/>
+		</Unit>
 		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Vertex.cpp">
 			<Option target="projekt_final"/>
 		</Unit>

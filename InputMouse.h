@@ -16,11 +16,15 @@
 class InputMouse
 {
 private:
+    static InputMouse* objectInstance;
 public:
+    static InputMouse* getInputMouse();
+
     InputMouse();
     ~InputMouse();
     static bool mouseClick[];
     static glm::vec2 mouseCursor;
+
     static void buttonClicked();
 };
 

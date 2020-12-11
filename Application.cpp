@@ -72,18 +72,21 @@ void Application::mainloop() {
 	//glEnable(GL_TEXTURE_CUBE_MAP_SEAMLESS);
 	glStencilOp(GL_KEEP, GL_KEEP, GL_REPLACE);
 
+    GL_CHECK_ERRORS();
 
 
 
-
-	while (!glfwWindowShouldClose(window))
+    while (!glfwWindowShouldClose(window))
 	{
+		scene->drawObj();
+
+		glfwSwapBuffers(window);
+		glfwPollEvents();
+
 		controller->keyboard->keysClicked();
 		controller->mouse->buttonClicked();
-		scene->drawObj();
-		glfwPollEvents();
-		glfwSwapBuffers(window);
-	}
+
+    }
 }
 
 

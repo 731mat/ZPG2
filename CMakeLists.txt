@@ -25,4 +25,4 @@ add_executable(projekt_final
         Shader.cpp
         Shader.h
         ShaderLoader.cpp
-        ShaderLoader.h OnChangeCameraSubject.h OnChangeCameraObserver.h OnChangeLightSubject.h OnChangeLightObserver.h Scene.cpp Scene.h InputKeyboard.cpp InputKeyboard.h InputMouse.cpp InputMouse.h ObjectManager.cpp ObjectManager.h Mesh.cpp Mesh.h Vertex.cpp Vertex.h)
+        ShaderLoader.h OnChangeCameraSubject.h OnChangeCameraObserver.h OnChangeLightSubject.h OnChangeLightObserver.h Scene.cpp Scene.h InputKeyboard.cpp InputKeyboard.h InputMouse.cpp InputMouse.h ObjectManager.cpp ObjectManager.h Mesh.cpp Mesh.h Vertex.cpp Vertex.h Texture.cpp Texture.h)

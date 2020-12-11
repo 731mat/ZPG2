@@ -18,6 +18,7 @@ CMakeFiles/projekt_final.dir/Application.cpp.o: ../OnChangeLightSubject.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../Scene.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../ShaderLoader.h
+CMakeFiles/projekt_final.dir/Application.cpp.o: ../Texture.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../Vertex.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../models/bedna.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../models/jump.h
@@ -63,6 +64,7 @@ CMakeFiles/projekt_final.dir/Controller.cpp.o: ../OnChangeLightSubject.h
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../Scene.h
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../ShaderLoader.h
+CMakeFiles/projekt_final.dir/Controller.cpp.o: ../Texture.h
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../Vertex.h
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../models/bedna.h
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../models/jump.h
@@ -88,6 +90,7 @@ CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../OnChangeLightSubject.h
 CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../Scene.h
 CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../ShaderLoader.h
+CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../Texture.h
 CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../Vertex.h
 CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../models/bedna.h
 CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../models/jump.h
@@ -113,6 +116,7 @@ CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../OnChangeLightSubject.h
 CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../Scene.h
 CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../ShaderLoader.h
+CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../Texture.h
 CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../Vertex.h
 CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../models/bedna.h
 CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../models/jump.h
@@ -138,6 +142,7 @@ CMakeFiles/projekt_final.dir/Light.cpp.o: ../OnChangeLightSubject.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../Scene.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../ShaderLoader.h
+CMakeFiles/projekt_final.dir/Light.cpp.o: ../Texture.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../Vertex.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../models/bedna.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../models/jump.h
@@ -183,6 +188,7 @@ CMakeFiles/projekt_final.dir/Object.cpp.o: ../OnChangeLightSubject.h
 CMakeFiles/projekt_final.dir/Object.cpp.o: ../Scene.h
 CMakeFiles/projekt_final.dir/Object.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/Object.cpp.o: ../ShaderLoader.h
+CMakeFiles/projekt_final.dir/Object.cpp.o: ../Texture.h
 CMakeFiles/projekt_final.dir/Object.cpp.o: ../Vertex.h
 CMakeFiles/projekt_final.dir/Object.cpp.o: ../models/bedna.h
 CMakeFiles/projekt_final.dir/Object.cpp.o: ../models/jump.h
@@ -228,6 +234,7 @@ CMakeFiles/projekt_final.dir/Scene.cpp.o: ../Scene.cpp
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../Scene.h
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../ShaderLoader.h
+CMakeFiles/projekt_final.dir/Scene.cpp.o: ../Texture.h
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../Vertex.h
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../models/bedna.h
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../models/jump.h
@@ -259,6 +266,28 @@ CMakeFiles/projekt_final.dir/Shader.cpp.o: ../opengl_helper.h
 CMakeFiles/projekt_final.dir/ShaderLoader.cpp.o: ../ShaderLoader.cpp
 CMakeFiles/projekt_final.dir/ShaderLoader.cpp.o: ../ShaderLoader.h
 
+CMakeFiles/projekt_final.dir/Texture.cpp.o: .././external/stb_image.h
+CMakeFiles/projekt_final.dir/Texture.cpp.o: ../Camera.h
+CMakeFiles/projekt_final.dir/Texture.cpp.o: ../Light.h
+CMakeFiles/projekt_final.dir/Texture.cpp.o: ../Mesh.h
+CMakeFiles/projekt_final.dir/Texture.cpp.o: ../Object.h
+CMakeFiles/projekt_final.dir/Texture.cpp.o: ../ObjectManager.h
+CMakeFiles/projekt_final.dir/Texture.cpp.o: ../OnChangeCameraObserver.h
+CMakeFiles/projekt_final.dir/Texture.cpp.o: ../OnChangeCameraSubject.h
+CMakeFiles/projekt_final.dir/Texture.cpp.o: ../OnChangeLightObserver.h
+CMakeFiles/projekt_final.dir/Texture.cpp.o: ../OnChangeLightSubject.h
+CMakeFiles/projekt_final.dir/Texture.cpp.o: ../Shader.h
+CMakeFiles/projekt_final.dir/Texture.cpp.o: ../ShaderLoader.h
+CMakeFiles/projekt_final.dir/Texture.cpp.o: ../Texture.cpp
+CMakeFiles/projekt_final.dir/Texture.cpp.o: ../Texture.h
+CMakeFiles/projekt_final.dir/Texture.cpp.o: ../Vertex.h
+CMakeFiles/projekt_final.dir/Texture.cpp.o: ../models/bedna.h
+CMakeFiles/projekt_final.dir/Texture.cpp.o: ../models/jump.h
+CMakeFiles/projekt_final.dir/Texture.cpp.o: ../models/sphere.h
+CMakeFiles/projekt_final.dir/Texture.cpp.o: ../models/suzi_flat.h
+CMakeFiles/projekt_final.dir/Texture.cpp.o: ../models/worker.h
+CMakeFiles/projekt_final.dir/Texture.cpp.o: ../opengl_helper.h
+
 CMakeFiles/projekt_final.dir/Vertex.cpp.o: ../Vertex.cpp
 CMakeFiles/projekt_final.dir/Vertex.cpp.o: ../Vertex.h
 
@@ -278,6 +307,7 @@ CMakeFiles/projekt_final.dir/main.cpp.o: ../OnChangeLightSubject.h
 CMakeFiles/projekt_final.dir/main.cpp.o: ../Scene.h
 CMakeFiles/projekt_final.dir/main.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/main.cpp.o: ../ShaderLoader.h
+CMakeFiles/projekt_final.dir/main.cpp.o: ../Texture.h
 CMakeFiles/projekt_final.dir/main.cpp.o: ../Vertex.h
 CMakeFiles/projekt_final.dir/main.cpp.o: ../main.cpp
 CMakeFiles/projekt_final.dir/main.cpp.o: ../models/bedna.h
