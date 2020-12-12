@@ -29,10 +29,10 @@ void InputKeyboard::keysClicked() {
     }
     if (keys[65] == true)
     {
-        Application::getWindow()->getScene()->getCamera()->moveLeft();
+        Application::getWindow()->getScene()->getCamera()->moveRight();
     }
     if (keys[68] == true)
-        Application::getWindow()->getScene()->getCamera()->moveRight();
+        Application::getWindow()->getScene()->getCamera()->moveLeft();
     if (keys[264] == true)
     {
         Application::getWindow()->getScene()->getLight()->move(glm::vec3(0.0f, -0.5f, 0.0f));

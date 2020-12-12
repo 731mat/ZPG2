@@ -271,6 +271,8 @@ MeshManager.h
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/MeshManager.h
 Texture.h
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Texture.h
+SkyBox.h
+/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/SkyBox.h
 
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Shader.h
 ShaderLoader.h
@@ -305,6 +307,18 @@ iostream
 -
 sstream
 -
+
+/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/SkyBox.h
+string
+-
+GL/glew.h
+-
+vector
+-
+Shader.h
+/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Shader.h
+OnChangeCameraObserver.h
+/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/OnChangeCameraObserver.h
 
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Texture.h
 GL/glew.h

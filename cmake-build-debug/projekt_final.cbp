@@ -126,6 +126,12 @@
 		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Light.h">
 			<Option target="projekt_final"/>
 		</Unit>
+		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/LightManager.cpp">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/LightManager.h">
+			<Option target="projekt_final"/>
+		</Unit>
 		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Mesh.cpp">
 			<Option target="projekt_final"/>
 		</Unit>
@@ -178,6 +184,12 @@
 			<Option target="projekt_final"/>
 		</Unit>
 		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/ShaderLoader.h">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/SkyBox.cpp">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/SkyBox.h">
 			<Option target="projekt_final"/>
 		</Unit>
 		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Texture.cpp">

@@ -312,6 +312,33 @@ Light.cpp.s:
 	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Light.cpp.s
 .PHONY : Light.cpp.s
 
+LightManager.o: LightManager.cpp.o
+
+.PHONY : LightManager.o
+
+# target to build an object file
+LightManager.cpp.o:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/LightManager.cpp.o
+.PHONY : LightManager.cpp.o
+
+LightManager.i: LightManager.cpp.i
+
+.PHONY : LightManager.i
+
+# target to preprocess a source file
+LightManager.cpp.i:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/LightManager.cpp.i
+.PHONY : LightManager.cpp.i
+
+LightManager.s: LightManager.cpp.s
+
+.PHONY : LightManager.s
+
+# target to generate assembly for a file
+LightManager.cpp.s:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/LightManager.cpp.s
+.PHONY : LightManager.cpp.s
+
 Mesh.o: Mesh.cpp.o
 
 .PHONY : Mesh.o
@@ -501,6 +528,33 @@ ShaderLoader.cpp.s:
 	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/ShaderLoader.cpp.s
 .PHONY : ShaderLoader.cpp.s
 
+SkyBox.o: SkyBox.cpp.o
+
+.PHONY : SkyBox.o
+
+# target to build an object file
+SkyBox.cpp.o:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/SkyBox.cpp.o
+.PHONY : SkyBox.cpp.o
+
+SkyBox.i: SkyBox.cpp.i
+
+.PHONY : SkyBox.i
+
+# target to preprocess a source file
+SkyBox.cpp.i:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/SkyBox.cpp.i
+.PHONY : SkyBox.cpp.i
+
+SkyBox.s: SkyBox.cpp.s
+
+.PHONY : SkyBox.s
+
+# target to generate assembly for a file
+SkyBox.cpp.s:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/SkyBox.cpp.s
+.PHONY : SkyBox.cpp.s
+
 Texture.o: Texture.cpp.o
 
 .PHONY : Texture.o
@@ -612,6 +666,9 @@ help:
 	@echo "... Light.o"
 	@echo "... Light.i"
 	@echo "... Light.s"
+	@echo "... LightManager.o"
+	@echo "... LightManager.i"
+	@echo "... LightManager.s"
 	@echo "... Mesh.o"
 	@echo "... Mesh.i"
 	@echo "... Mesh.s"
@@ -633,6 +690,9 @@ help:
 	@echo "... ShaderLoader.o"
 	@echo "... ShaderLoader.i"
 	@echo "... ShaderLoader.s"
+	@echo "... SkyBox.o"
+	@echo "... SkyBox.i"
+	@echo "... SkyBox.s"
 	@echo "... Texture.o"
 	@echo "... Texture.i"
 	@echo "... Texture.s"

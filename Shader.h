@@ -23,6 +23,9 @@ private:
 	GLuint lightPositionID;
 	GLuint viewPositionID;
 
+	GLuint lightObjectsID;
+
+
 public:
 	Shader(const char *vertexFile, const char *fragmentFile);
 	~Shader();
@@ -33,6 +36,11 @@ public:
 	void updateCamera(Camera* camera);
 	void updateLight(Light* light);
 	void updateLights(std::vector<Light*> lights);
+
+	void send(const GLchar* name, glm::mat4 value);
+	void send(const GLchar* name, glm::vec3 value);
+	void send(const GLchar* name, int value);
+	void send(const GLchar* name, float value);
 
 	GLuint getID() { return this->programID;  }
 };

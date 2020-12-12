@@ -30,15 +30,18 @@
 #include "opengl_helper.h"
 #include "MeshManager.h"
 #include "Texture.h"
+#include "SkyBox.h"
 
 class Scene : public OnChangeLightObserver{
 private:
 
-    Shader *lambert, *phong;
+    Shader *lambert, *phong, *skybox_shader;
     Camera* camera;
     Light* light, *light2;
     Texture* texture;
+    SkyBox* skybox;
     std::vector<Object*> objects;
+    std::vector<Light*> lights;
 
     MeshManager* mshManager;
     GLuint index;
@@ -48,7 +51,7 @@ private:
 
 public:
 
-    std::vector<Light*> lights;
+
     Scene();
     ~Scene();
     void drawObj();

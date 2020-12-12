@@ -10,6 +10,7 @@ Object::Object(Mesh* mesh,Shader* shader, glm::vec3 setPosition, glm::vec3 setSc
 	this->shader = shader;
 
 	this->objModel = nullptr;
+
 	model = glm::mat4(1.0f);
 	model = glm::scale(model, setScale);
 	model = glm::translate(model, setPosition);

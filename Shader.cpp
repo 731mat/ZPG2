@@ -18,6 +18,9 @@ Shader::Shader(const char *vertexFile, const char *fragmentFile) {
 	lightPositionID = glGetUniformLocation(programID, "lightArray");
 	viewPositionID = glGetUniformLocation(programID, "viewPosition");
 
+    lightObjectsID = glGetUniformLocation(programID, "lightObjects");
+
+
     glm::mat4 r = glm::mat4();
     glUniformMatrix4fv(matrixID, 1, GL_FALSE, &r[0][0]);
 }
@@ -51,21 +54,61 @@ void Shader::updateLight(Light* light) {
 	light->draw();
 	setShader();
 	glm::vec3 lig = light->getPosition();
-	glUniform3f(lightPositionID, lig.x, lig.y, lig.z);
+	//glUniform3f(lightPositionID, lig.x, lig.y, lig.z);
+	//send("lightObjects[0].position", lig);
+	//send("lightArray", lig);
+
 	printf("LIGHT [%f,%f,%f] \n", lig.x, lig.y, lig.z);
 }
 void Shader::updateLights(std::vector<Light*> lights){
 	glm::vec3 position[5];
 	for (unsigned int i = 0; i < lights.size(); i++) {
 		position[i] = lights[i]->getPosition();
+		this->send(("lightObjects["+std::to_string(i)+ "].position").c_str(), lights[i]->getPosition());
+		this->send(("lightObjects["+std::to_string(i)+ "].lightType").c_str(), (int)lights[i]->getType());
+		this->send(("lightObjects["+std::to_string(i)+ "].direction").c_str(), lights[i]->getPositionDirection());
+		this->send(("lightObjects["+std::to_string(i)+ "].cutOff").c_str(), glm::cos(glm::radians(12.5f)));
+		this->send(("lightObjects["+std::to_string(i)+ "].outerCutOff").c_str(), glm::cos(glm::radians(17.5f)));
 	}
-	glUniform3fv(lightPositionID, lights.size(), &position[0][0]);
+
+    this->send("light_count", (int)(lights.size()));
+
+    //glUniform3fv(lightPositionID, lights.size(), &position[0][0]);
 }
 
 void Shader::setModelMatrix(glm::mat4 matrix) {
 	setShader();
 	glUniformMatrix4fv(matrixID, 1, GL_FALSE, &matrix[0][0]);
 }
+
+void Shader::send(const GLchar * name,glm::mat4 value)
+{
+    GLint location = glGetUniformLocation(programID, name);
+    glUniformMatrix4fv(location, 1, GL_FALSE, value_ptr(value));
+}
+
+void Shader::send(const GLchar * name, glm::vec3 value)
+{
+	GLint location = glGetUniformLocation(programID, name);
+	setShader();
+	glUniform3fv(location, 1, value_ptr(value));
+}
+
+void Shader::send(const GLchar * name, int value)
+{
+	GLint location = glGetUniformLocation(programID, name);
+	setShader();
+	glUniform1i(location, value);
+}
+
+void Shader::send(const GLchar * name, float value)
+{
+	GLint location = glGetUniformLocation(programID, name);
+	setShader();
+	glUniform1f(location, value);
+}
+
+
 
 
 

@@ -1,17 +1,19 @@
 #include "Light.h"
 #include "Application.h"
 
-Light::Light(Shader* shader, MeshManager* mshManager) {
+Light::Light(Shader* shader, MeshManager* mshManager,LightType type) {
 
 	x = 0.0f;
 	y = 0.0f;
 	z = 0.0f;
 	objLig = new Object(mshManager->getMesh("sphere"), shader, getPosition(), glm::vec3(0.5, 0.5, 0.5));
+	this->type = type;
 }
 Light::Light(float x, float y, float z) {
 	this->x = x;
 	this->y = y;
 	this->z = z;
+	this->type = LightType::Directional;
 }
 
 Light::~Light() {}
@@ -27,6 +29,13 @@ void Light::draw() {
 
 }
 
+void Light::setPosition(glm::vec3 vector){
+    this->x = vector.x;
+    this->y = vector.y;
+    this->z = vector.z;
+    objLig->setPosition(vector);
+    notifyObserver();
+}
 void Light::move(glm::vec3 vector)
 {
 	this->x += vector.x;
@@ -49,4 +58,8 @@ void Light::notifyObserver() {
 		((OnChangeLightObserver*)(*pos))->updateLight(this);
 		++pos;
 	}
+}
+
+LightType Light::getType() {
+	return this->type;
 }

@@ -9,10 +9,14 @@ Scene::Scene() {
     compileShaders();
     mshManager = new MeshManager;
 
+
     texture->loadTexture(phong);
 
+    skybox = new SkyBox(skybox_shader);
+
+
     camera = new Camera;
-    light = new Light(lambert, mshManager);
+    light = new Light(lambert, mshManager, LightType::Point);
     light2 = new Light(20, 0, -50);
     lights.push_back(light);
     lights.push_back(light2);
@@ -24,8 +28,12 @@ Scene::Scene() {
 
     camera->registerObserver((OnChangeCameraObserver*)lambert);
     camera->registerObserver((OnChangeCameraObserver*)phong);
+    camera->registerObserver((OnChangeCameraObserver*)skybox_shader);
+
+    camera->registerObserver(skybox);
 
     //mshManager->setObj("tree", new Model("models/pine.lwo"));
+
 
 
     mshManager->setMesh("sphere", new Mesh(GL_TRIANGLES, sphereVertices, sphereCount,"sphere"));
@@ -35,7 +43,10 @@ Scene::Scene() {
     //mshManager->setMesh("jumper", new Mesh(GL_TRIANGLES, jumpVertices, jumpCount,"jumper"));
     //mshManager->setMesh("plane", new Mesh(GL_TRIANGLES, plane , 10));
 
-    objects.push_back(new Object(new Model("../models/fels.3ds"), phong, glm::vec3(0, 2, 0), glm::vec3(1, 1, 1)));
+    //objects.push_back(new Object(new Model("../models/fels.3ds"), phong, glm::vec3(0, 2, 0), glm::vec3(1, 1, 1)));
+    objects.push_back(new Object(new Model("../models/pine.lwo"), phong, glm::vec3(0, 2, 0), glm::vec3(1, 1, 1)));
+
+
 
     objects.push_back(new Object(mshManager->getMesh("sphere"), phong, glm::vec3(0, 2, 0), glm::vec3(1, 1, 1)));
     objects.push_back(new Object(mshManager->getMesh("worker"), phong, glm::vec3(0, -2, 0), glm::vec3(1, 1, 1)));
@@ -68,6 +79,7 @@ Scene::~Scene() {
 
 void Scene::compileShaders() {
 
+    skybox_shader = new Shader("../shaders/Skybox-VS.glsl", "../shaders/Skybox-FS.glsl");
     lambert = new Shader("../shaders/Lambert-VS.glsl", "../shaders/Lambert-FS.glsl");
     phong = new Shader("../shaders/Phong-VS.glsl", "../shaders/Phong-FS.glsl");
 
@@ -82,10 +94,9 @@ void Scene::drawObj() {
 
    // Allow data to be written to the stencil buffer.
    //glStencilMask(0xFF);
-
-
     updateLight(light);
     light->draw();
+    skybox->drawSkybox();
 
     for (unsigned int i = 0; i < objects.size(); i++){
         glStencilFunc(GL_ALWAYS, i+1, 0xFF);

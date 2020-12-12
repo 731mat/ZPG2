@@ -23,7 +23,7 @@ Texture::~Texture()
 void Texture::loadTexture(Shader* shader)
 {
 
-    char path[200] = "/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final/textures/wall-small.png";
+    char path[200] = "/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/textures/grass.jpg";
 
     GLuint x =1;
     glGenTextures(1, &x);
@@ -50,9 +50,7 @@ void Texture::loadTexture(Shader* shader)
     }
     stbi_image_free(data);
 
-    glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, x);
-
+    //glBindTexture(GL_TEXTURE_2D, x);
 
     glActiveTexture(GL_TEXTURE0);
 

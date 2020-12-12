@@ -16,6 +16,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/projekt_final.dir/Texture.cpp.o"
   "CMakeFiles/projekt_final.dir/Drawable.cpp.o"
   "CMakeFiles/projekt_final.dir/Model.cpp.o"
+  "CMakeFiles/projekt_final.dir/SkyBox.cpp.o"
+  "CMakeFiles/projekt_final.dir/LightManager.cpp.o"
   "projekt_final.pdb"
   "projekt_final"
 )

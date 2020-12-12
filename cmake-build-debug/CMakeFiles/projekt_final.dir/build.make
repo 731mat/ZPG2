@@ -278,6 +278,32 @@ CMakeFiles/projekt_final.dir/Model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt_final.dir/Model.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Model.cpp -o CMakeFiles/projekt_final.dir/Model.cpp.s
 
+CMakeFiles/projekt_final.dir/SkyBox.cpp.o: CMakeFiles/projekt_final.dir/flags.make
+CMakeFiles/projekt_final.dir/SkyBox.cpp.o: ../SkyBox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/projekt_final.dir/SkyBox.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/SkyBox.cpp.o -c /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/SkyBox.cpp
+
+CMakeFiles/projekt_final.dir/SkyBox.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projekt_final.dir/SkyBox.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/SkyBox.cpp > CMakeFiles/projekt_final.dir/SkyBox.cpp.i
+
+CMakeFiles/projekt_final.dir/SkyBox.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt_final.dir/SkyBox.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/SkyBox.cpp -o CMakeFiles/projekt_final.dir/SkyBox.cpp.s
+
+CMakeFiles/projekt_final.dir/LightManager.cpp.o: CMakeFiles/projekt_final.dir/flags.make
+CMakeFiles/projekt_final.dir/LightManager.cpp.o: ../LightManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/projekt_final.dir/LightManager.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt_final.dir/LightManager.cpp.o -c /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/LightManager.cpp
+
+CMakeFiles/projekt_final.dir/LightManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projekt_final.dir/LightManager.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/LightManager.cpp > CMakeFiles/projekt_final.dir/LightManager.cpp.i
+
+CMakeFiles/projekt_final.dir/LightManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt_final.dir/LightManager.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/LightManager.cpp -o CMakeFiles/projekt_final.dir/LightManager.cpp.s
+
 # Object files for target projekt_final
 projekt_final_OBJECTS = \
 "CMakeFiles/projekt_final.dir/Application.cpp.o" \
@@ -296,7 +322,9 @@ projekt_final_OBJECTS = \
 "CMakeFiles/projekt_final.dir/Vertex.cpp.o" \
 "CMakeFiles/projekt_final.dir/Texture.cpp.o" \
 "CMakeFiles/projekt_final.dir/Drawable.cpp.o" \
-"CMakeFiles/projekt_final.dir/Model.cpp.o"
+"CMakeFiles/projekt_final.dir/Model.cpp.o" \
+"CMakeFiles/projekt_final.dir/SkyBox.cpp.o" \
+"CMakeFiles/projekt_final.dir/LightManager.cpp.o"
 
 # External object files for target projekt_final
 projekt_final_EXTERNAL_OBJECTS =
@@ -318,9 +346,11 @@ projekt_final: CMakeFiles/projekt_final.dir/Vertex.cpp.o
 projekt_final: CMakeFiles/projekt_final.dir/Texture.cpp.o
 projekt_final: CMakeFiles/projekt_final.dir/Drawable.cpp.o
 projekt_final: CMakeFiles/projekt_final.dir/Model.cpp.o
+projekt_final: CMakeFiles/projekt_final.dir/SkyBox.cpp.o
+projekt_final: CMakeFiles/projekt_final.dir/LightManager.cpp.o
 projekt_final: CMakeFiles/projekt_final.dir/build.make
 projekt_final: CMakeFiles/projekt_final.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable projekt_final"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable projekt_final"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/projekt_final.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
