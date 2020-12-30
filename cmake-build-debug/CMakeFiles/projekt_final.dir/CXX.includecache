@@ -192,12 +192,6 @@ assimp/postprocess.h
 Drawable.h
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Drawable.h
 
-/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Object.cpp
-Object.h
-/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Object.h
-Application.h
-/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Application.h
-
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Object.h
 GL/glew.h
 -
@@ -251,6 +245,12 @@ list
 -
 iostream
 -
+
+/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Scene.cpp
+Scene.h
+/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Scene.h
+Application.h
+/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Application.h
 
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Scene.h
 GL/glew.h

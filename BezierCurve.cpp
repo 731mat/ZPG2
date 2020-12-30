@@ -4,35 +4,21 @@
 
 #include "BezierCurve.h"
 
-
-
-BezierCurve::BezierCurve(std::vector<glm::vec2> points) { this->points = points; }
-
-glm::vec2 BezierCurve::getPoint(float t)
+BezierCurve::BezierCurve(glm::vec3 v1, glm::vec3 v2, glm::vec3 v3, glm::vec3 v4)
 {
-    glm::vec2 result;
-    unsigned int n = (unsigned int)(points.size());
-    for (unsigned int i = 0; i < n; i++)
-    {
-        auto p = points[i];
-        auto b = bernsteionPolymonial(n - 1, i, t);
-        result += (p * b);
-    }
-    return result;
+    this->v1 = v1;
+    this->v2 = v2;
+    this->v3 = v3;
+    this->v4 = v4;
+}
+
+glm::vec3 BezierCurve::getPoint(float t)
+{
+    glm::vec3 p1 = v1 * std::pow(1-t, 3.f);
+    glm::vec3 p2 = v2 * (3*t * std::pow(1-t, 2.f));
+    glm::vec3 p3 = v3 * (3*t*t * (1-t));
+    glm::vec3 p4 = v4 * (t*t*t);
+    return p1 + p2 + p3 + p4;
 }
 
 
-
-float BezierCurve::bernsteionPolymonial(unsigned n, unsigned i, float t)
-{
-    float a = binomialCoeff(n, i);
-    float b = (float)pow(t, i);
-    float c = pow((1.f, -t), n - 1);
-    return a * b * c;
-}
-
-float BezierCurve::binomialCoeff(float n, float k)
-{
-    if (k == 0 || k == n) return 1;
-    return binomialCoeff(n - 1, k - 1) + binomialCoeff(n - 1, k);
-}

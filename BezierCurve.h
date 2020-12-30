@@ -15,12 +15,12 @@
 
 class BezierCurve {
 private:
-    std::vector<glm::vec2> points;
-    float bernsteionPolymonial(unsigned int n, unsigned int i, float t);
-    float binomialCoeff(float n, float k);
+    glm::vec3 v1, v2, v3, v4;
+
 public:
-    BezierCurve(std::vector<glm::vec2> points);
-    glm::vec2 getPoint(float t);
+
+    BezierCurve(glm::vec3 v1, glm::vec3 v2, glm::vec3 v3, glm::vec3 v4);
+    glm::vec3 getPoint(float t);
 };
 
 

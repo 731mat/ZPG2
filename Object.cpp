@@ -94,9 +94,8 @@ void Object::move() {
 
 	const float shift = 0.005f;
 
-	glm::vec2 p = curve->getPoint(curve_t);
 	model = glm::mat4(1.0f);
-	model = glm::translate(model, glm::vec3(p.x, 1.f, p.y));
+	model = glm::translate(model, curve->getPoint(curve_t));
 
 	if (curve_forward)
 	{
