@@ -18,6 +18,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/projekt_final.dir/Model.cpp.o"
   "CMakeFiles/projekt_final.dir/SkyBox.cpp.o"
   "CMakeFiles/projekt_final.dir/LightManager.cpp.o"
+  "CMakeFiles/projekt_final.dir/Terrain.cpp.o"
+  "CMakeFiles/projekt_final.dir/BezierCurve.cpp.o"
   "projekt_final.pdb"
   "projekt_final"
 )

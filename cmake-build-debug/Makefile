@@ -150,6 +150,33 @@ Application.cpp.s:
 	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Application.cpp.s
 .PHONY : Application.cpp.s
 
+BezierCurve.o: BezierCurve.cpp.o
+
+.PHONY : BezierCurve.o
+
+# target to build an object file
+BezierCurve.cpp.o:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/BezierCurve.cpp.o
+.PHONY : BezierCurve.cpp.o
+
+BezierCurve.i: BezierCurve.cpp.i
+
+.PHONY : BezierCurve.i
+
+# target to preprocess a source file
+BezierCurve.cpp.i:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/BezierCurve.cpp.i
+.PHONY : BezierCurve.cpp.i
+
+BezierCurve.s: BezierCurve.cpp.s
+
+.PHONY : BezierCurve.s
+
+# target to generate assembly for a file
+BezierCurve.cpp.s:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/BezierCurve.cpp.s
+.PHONY : BezierCurve.cpp.s
+
 Camera.o: Camera.cpp.o
 
 .PHONY : Camera.o
@@ -555,6 +582,33 @@ SkyBox.cpp.s:
 	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/SkyBox.cpp.s
 .PHONY : SkyBox.cpp.s
 
+Terrain.o: Terrain.cpp.o
+
+.PHONY : Terrain.o
+
+# target to build an object file
+Terrain.cpp.o:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Terrain.cpp.o
+.PHONY : Terrain.cpp.o
+
+Terrain.i: Terrain.cpp.i
+
+.PHONY : Terrain.i
+
+# target to preprocess a source file
+Terrain.cpp.i:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Terrain.cpp.i
+.PHONY : Terrain.cpp.i
+
+Terrain.s: Terrain.cpp.s
+
+.PHONY : Terrain.s
+
+# target to generate assembly for a file
+Terrain.cpp.s:
+	$(MAKE) -f CMakeFiles/projekt_final.dir/build.make CMakeFiles/projekt_final.dir/Terrain.cpp.s
+.PHONY : Terrain.cpp.s
+
 Texture.o: Texture.cpp.o
 
 .PHONY : Texture.o
@@ -648,6 +702,9 @@ help:
 	@echo "... Application.o"
 	@echo "... Application.i"
 	@echo "... Application.s"
+	@echo "... BezierCurve.o"
+	@echo "... BezierCurve.i"
+	@echo "... BezierCurve.s"
 	@echo "... Camera.o"
 	@echo "... Camera.i"
 	@echo "... Camera.s"
@@ -693,6 +750,9 @@ help:
 	@echo "... SkyBox.o"
 	@echo "... SkyBox.i"
 	@echo "... SkyBox.s"
+	@echo "... Terrain.o"
+	@echo "... Terrain.i"
+	@echo "... Terrain.s"
 	@echo "... Texture.o"
 	@echo "... Texture.i"
 	@echo "... Texture.s"

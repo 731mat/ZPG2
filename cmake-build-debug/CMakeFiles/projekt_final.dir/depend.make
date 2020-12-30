@@ -3,6 +3,7 @@
 
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../Application.cpp
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../Application.h
+CMakeFiles/projekt_final.dir/Application.cpp.o: ../BezierCurve.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../Camera.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../Controller.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../Drawable.h
@@ -21,6 +22,7 @@ CMakeFiles/projekt_final.dir/Application.cpp.o: ../Scene.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../ShaderLoader.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../SkyBox.h
+CMakeFiles/projekt_final.dir/Application.cpp.o: ../Terrain.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../Texture.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../Vertex.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../models/bedna.h
@@ -29,6 +31,10 @@ CMakeFiles/projekt_final.dir/Application.cpp.o: ../models/suzi_flat.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../models/worker.h
 CMakeFiles/projekt_final.dir/Application.cpp.o: ../opengl_helper.h
 
+CMakeFiles/projekt_final.dir/BezierCurve.cpp.o: ../BezierCurve.cpp
+CMakeFiles/projekt_final.dir/BezierCurve.cpp.o: ../BezierCurve.h
+
+CMakeFiles/projekt_final.dir/Camera.cpp.o: ../BezierCurve.h
 CMakeFiles/projekt_final.dir/Camera.cpp.o: ../Camera.cpp
 CMakeFiles/projekt_final.dir/Camera.cpp.o: ../Camera.h
 CMakeFiles/projekt_final.dir/Camera.cpp.o: ../Drawable.h
@@ -43,6 +49,7 @@ CMakeFiles/projekt_final.dir/Camera.cpp.o: ../OnChangeLightObserver.h
 CMakeFiles/projekt_final.dir/Camera.cpp.o: ../OnChangeLightSubject.h
 CMakeFiles/projekt_final.dir/Camera.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/Camera.cpp.o: ../ShaderLoader.h
+CMakeFiles/projekt_final.dir/Camera.cpp.o: ../Texture.h
 CMakeFiles/projekt_final.dir/Camera.cpp.o: ../Vertex.h
 CMakeFiles/projekt_final.dir/Camera.cpp.o: ../models/bedna.h
 CMakeFiles/projekt_final.dir/Camera.cpp.o: ../models/sphere.h
@@ -51,6 +58,7 @@ CMakeFiles/projekt_final.dir/Camera.cpp.o: ../models/worker.h
 CMakeFiles/projekt_final.dir/Camera.cpp.o: ../opengl_helper.h
 
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../Application.h
+CMakeFiles/projekt_final.dir/Controller.cpp.o: ../BezierCurve.h
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../Camera.h
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../Controller.cpp
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../Controller.h
@@ -70,6 +78,7 @@ CMakeFiles/projekt_final.dir/Controller.cpp.o: ../Scene.h
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../ShaderLoader.h
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../SkyBox.h
+CMakeFiles/projekt_final.dir/Controller.cpp.o: ../Terrain.h
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../Texture.h
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../Vertex.h
 CMakeFiles/projekt_final.dir/Controller.cpp.o: ../models/bedna.h
@@ -82,6 +91,7 @@ CMakeFiles/projekt_final.dir/Drawable.cpp.o: ../Drawable.cpp
 CMakeFiles/projekt_final.dir/Drawable.cpp.o: ../Drawable.h
 
 CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../Application.h
+CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../BezierCurve.h
 CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../Camera.h
 CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../Controller.h
 CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../Drawable.h
@@ -101,6 +111,7 @@ CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../Scene.h
 CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../ShaderLoader.h
 CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../SkyBox.h
+CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../Terrain.h
 CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../Texture.h
 CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../Vertex.h
 CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../models/bedna.h
@@ -110,6 +121,7 @@ CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../models/worker.h
 CMakeFiles/projekt_final.dir/InputKeyboard.cpp.o: ../opengl_helper.h
 
 CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../Application.h
+CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../BezierCurve.h
 CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../Camera.h
 CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../Controller.h
 CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../Drawable.h
@@ -129,6 +141,7 @@ CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../Scene.h
 CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../ShaderLoader.h
 CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../SkyBox.h
+CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../Terrain.h
 CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../Texture.h
 CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../Vertex.h
 CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../models/bedna.h
@@ -138,6 +151,7 @@ CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../models/worker.h
 CMakeFiles/projekt_final.dir/InputMouse.cpp.o: ../opengl_helper.h
 
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../Application.h
+CMakeFiles/projekt_final.dir/Light.cpp.o: ../BezierCurve.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../Camera.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../Controller.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../Drawable.h
@@ -157,6 +171,7 @@ CMakeFiles/projekt_final.dir/Light.cpp.o: ../Scene.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../ShaderLoader.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../SkyBox.h
+CMakeFiles/projekt_final.dir/Light.cpp.o: ../Terrain.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../Texture.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../Vertex.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../models/bedna.h
@@ -165,6 +180,7 @@ CMakeFiles/projekt_final.dir/Light.cpp.o: ../models/suzi_flat.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../models/worker.h
 CMakeFiles/projekt_final.dir/Light.cpp.o: ../opengl_helper.h
 
+CMakeFiles/projekt_final.dir/LightManager.cpp.o: ../BezierCurve.h
 CMakeFiles/projekt_final.dir/LightManager.cpp.o: ../Camera.h
 CMakeFiles/projekt_final.dir/LightManager.cpp.o: ../Drawable.h
 CMakeFiles/projekt_final.dir/LightManager.cpp.o: ../Light.h
@@ -180,6 +196,7 @@ CMakeFiles/projekt_final.dir/LightManager.cpp.o: ../OnChangeLightObserver.h
 CMakeFiles/projekt_final.dir/LightManager.cpp.o: ../OnChangeLightSubject.h
 CMakeFiles/projekt_final.dir/LightManager.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/LightManager.cpp.o: ../ShaderLoader.h
+CMakeFiles/projekt_final.dir/LightManager.cpp.o: ../Texture.h
 CMakeFiles/projekt_final.dir/LightManager.cpp.o: ../Vertex.h
 CMakeFiles/projekt_final.dir/LightManager.cpp.o: ../models/bedna.h
 CMakeFiles/projekt_final.dir/LightManager.cpp.o: ../models/sphere.h
@@ -187,6 +204,7 @@ CMakeFiles/projekt_final.dir/LightManager.cpp.o: ../models/suzi_flat.h
 CMakeFiles/projekt_final.dir/LightManager.cpp.o: ../models/worker.h
 CMakeFiles/projekt_final.dir/LightManager.cpp.o: ../opengl_helper.h
 
+CMakeFiles/projekt_final.dir/Mesh.cpp.o: ../BezierCurve.h
 CMakeFiles/projekt_final.dir/Mesh.cpp.o: ../Camera.h
 CMakeFiles/projekt_final.dir/Mesh.cpp.o: ../Drawable.h
 CMakeFiles/projekt_final.dir/Mesh.cpp.o: ../Light.h
@@ -201,6 +219,7 @@ CMakeFiles/projekt_final.dir/Mesh.cpp.o: ../OnChangeLightObserver.h
 CMakeFiles/projekt_final.dir/Mesh.cpp.o: ../OnChangeLightSubject.h
 CMakeFiles/projekt_final.dir/Mesh.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/Mesh.cpp.o: ../ShaderLoader.h
+CMakeFiles/projekt_final.dir/Mesh.cpp.o: ../Texture.h
 CMakeFiles/projekt_final.dir/Mesh.cpp.o: ../Vertex.h
 CMakeFiles/projekt_final.dir/Mesh.cpp.o: ../models/bedna.h
 CMakeFiles/projekt_final.dir/Mesh.cpp.o: ../models/sphere.h
@@ -208,6 +227,7 @@ CMakeFiles/projekt_final.dir/Mesh.cpp.o: ../models/suzi_flat.h
 CMakeFiles/projekt_final.dir/Mesh.cpp.o: ../models/worker.h
 CMakeFiles/projekt_final.dir/Mesh.cpp.o: ../opengl_helper.h
 
+CMakeFiles/projekt_final.dir/MeshManager.cpp.o: ../BezierCurve.h
 CMakeFiles/projekt_final.dir/MeshManager.cpp.o: ../Camera.h
 CMakeFiles/projekt_final.dir/MeshManager.cpp.o: ../Drawable.h
 CMakeFiles/projekt_final.dir/MeshManager.cpp.o: ../Light.h
@@ -222,6 +242,7 @@ CMakeFiles/projekt_final.dir/MeshManager.cpp.o: ../OnChangeLightObserver.h
 CMakeFiles/projekt_final.dir/MeshManager.cpp.o: ../OnChangeLightSubject.h
 CMakeFiles/projekt_final.dir/MeshManager.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/MeshManager.cpp.o: ../ShaderLoader.h
+CMakeFiles/projekt_final.dir/MeshManager.cpp.o: ../Texture.h
 CMakeFiles/projekt_final.dir/MeshManager.cpp.o: ../Vertex.h
 CMakeFiles/projekt_final.dir/MeshManager.cpp.o: ../models/bedna.h
 CMakeFiles/projekt_final.dir/MeshManager.cpp.o: ../models/sphere.h
@@ -234,6 +255,7 @@ CMakeFiles/projekt_final.dir/Model.cpp.o: ../Model.cpp
 CMakeFiles/projekt_final.dir/Model.cpp.o: ../Model.h
 
 CMakeFiles/projekt_final.dir/Object.cpp.o: ../Application.h
+CMakeFiles/projekt_final.dir/Object.cpp.o: ../BezierCurve.h
 CMakeFiles/projekt_final.dir/Object.cpp.o: ../Camera.h
 CMakeFiles/projekt_final.dir/Object.cpp.o: ../Controller.h
 CMakeFiles/projekt_final.dir/Object.cpp.o: ../Drawable.h
@@ -253,6 +275,7 @@ CMakeFiles/projekt_final.dir/Object.cpp.o: ../Scene.h
 CMakeFiles/projekt_final.dir/Object.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/Object.cpp.o: ../ShaderLoader.h
 CMakeFiles/projekt_final.dir/Object.cpp.o: ../SkyBox.h
+CMakeFiles/projekt_final.dir/Object.cpp.o: ../Terrain.h
 CMakeFiles/projekt_final.dir/Object.cpp.o: ../Texture.h
 CMakeFiles/projekt_final.dir/Object.cpp.o: ../Vertex.h
 CMakeFiles/projekt_final.dir/Object.cpp.o: ../models/bedna.h
@@ -262,6 +285,7 @@ CMakeFiles/projekt_final.dir/Object.cpp.o: ../models/worker.h
 CMakeFiles/projekt_final.dir/Object.cpp.o: ../opengl_helper.h
 
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../Application.h
+CMakeFiles/projekt_final.dir/Scene.cpp.o: ../BezierCurve.h
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../Camera.h
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../Controller.h
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../Drawable.h
@@ -281,6 +305,7 @@ CMakeFiles/projekt_final.dir/Scene.cpp.o: ../Scene.h
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../ShaderLoader.h
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../SkyBox.h
+CMakeFiles/projekt_final.dir/Scene.cpp.o: ../Terrain.h
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../Texture.h
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../Vertex.h
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../models/bedna.h
@@ -289,6 +314,7 @@ CMakeFiles/projekt_final.dir/Scene.cpp.o: ../models/suzi_flat.h
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../models/worker.h
 CMakeFiles/projekt_final.dir/Scene.cpp.o: ../opengl_helper.h
 
+CMakeFiles/projekt_final.dir/Shader.cpp.o: ../BezierCurve.h
 CMakeFiles/projekt_final.dir/Shader.cpp.o: ../Camera.h
 CMakeFiles/projekt_final.dir/Shader.cpp.o: ../Drawable.h
 CMakeFiles/projekt_final.dir/Shader.cpp.o: ../Light.h
@@ -303,6 +329,7 @@ CMakeFiles/projekt_final.dir/Shader.cpp.o: ../OnChangeLightSubject.h
 CMakeFiles/projekt_final.dir/Shader.cpp.o: ../Shader.cpp
 CMakeFiles/projekt_final.dir/Shader.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/Shader.cpp.o: ../ShaderLoader.h
+CMakeFiles/projekt_final.dir/Shader.cpp.o: ../Texture.h
 CMakeFiles/projekt_final.dir/Shader.cpp.o: ../Vertex.h
 CMakeFiles/projekt_final.dir/Shader.cpp.o: ../models/bedna.h
 CMakeFiles/projekt_final.dir/Shader.cpp.o: ../models/sphere.h
@@ -314,6 +341,7 @@ CMakeFiles/projekt_final.dir/ShaderLoader.cpp.o: ../ShaderLoader.cpp
 CMakeFiles/projekt_final.dir/ShaderLoader.cpp.o: ../ShaderLoader.h
 
 CMakeFiles/projekt_final.dir/SkyBox.cpp.o: .././external/stb_image.h
+CMakeFiles/projekt_final.dir/SkyBox.cpp.o: ../BezierCurve.h
 CMakeFiles/projekt_final.dir/SkyBox.cpp.o: ../Camera.h
 CMakeFiles/projekt_final.dir/SkyBox.cpp.o: ../Drawable.h
 CMakeFiles/projekt_final.dir/SkyBox.cpp.o: ../Light.h
@@ -329,6 +357,7 @@ CMakeFiles/projekt_final.dir/SkyBox.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/SkyBox.cpp.o: ../ShaderLoader.h
 CMakeFiles/projekt_final.dir/SkyBox.cpp.o: ../SkyBox.cpp
 CMakeFiles/projekt_final.dir/SkyBox.cpp.o: ../SkyBox.h
+CMakeFiles/projekt_final.dir/SkyBox.cpp.o: ../Texture.h
 CMakeFiles/projekt_final.dir/SkyBox.cpp.o: ../Vertex.h
 CMakeFiles/projekt_final.dir/SkyBox.cpp.o: ../models/bedna.h
 CMakeFiles/projekt_final.dir/SkyBox.cpp.o: ../models/sphere.h
@@ -336,7 +365,32 @@ CMakeFiles/projekt_final.dir/SkyBox.cpp.o: ../models/suzi_flat.h
 CMakeFiles/projekt_final.dir/SkyBox.cpp.o: ../models/worker.h
 CMakeFiles/projekt_final.dir/SkyBox.cpp.o: ../opengl_helper.h
 
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../BezierCurve.h
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../Camera.h
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../Drawable.h
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../Light.h
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../Mesh.h
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../MeshManager.h
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../Model.h
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../Object.h
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../OnChangeCameraObserver.h
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../OnChangeCameraSubject.h
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../OnChangeLightObserver.h
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../OnChangeLightSubject.h
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../Shader.h
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../ShaderLoader.h
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../Terrain.cpp
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../Terrain.h
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../Texture.h
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../Vertex.h
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../models/bedna.h
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../models/sphere.h
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../models/suzi_flat.h
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../models/worker.h
+CMakeFiles/projekt_final.dir/Terrain.cpp.o: ../opengl_helper.h
+
 CMakeFiles/projekt_final.dir/Texture.cpp.o: .././external/stb_image.h
+CMakeFiles/projekt_final.dir/Texture.cpp.o: ../BezierCurve.h
 CMakeFiles/projekt_final.dir/Texture.cpp.o: ../Camera.h
 CMakeFiles/projekt_final.dir/Texture.cpp.o: ../Drawable.h
 CMakeFiles/projekt_final.dir/Texture.cpp.o: ../Light.h
@@ -363,6 +417,7 @@ CMakeFiles/projekt_final.dir/Vertex.cpp.o: ../Vertex.cpp
 CMakeFiles/projekt_final.dir/Vertex.cpp.o: ../Vertex.h
 
 CMakeFiles/projekt_final.dir/main.cpp.o: ../Application.h
+CMakeFiles/projekt_final.dir/main.cpp.o: ../BezierCurve.h
 CMakeFiles/projekt_final.dir/main.cpp.o: ../Camera.h
 CMakeFiles/projekt_final.dir/main.cpp.o: ../Controller.h
 CMakeFiles/projekt_final.dir/main.cpp.o: ../Drawable.h
@@ -381,6 +436,7 @@ CMakeFiles/projekt_final.dir/main.cpp.o: ../Scene.h
 CMakeFiles/projekt_final.dir/main.cpp.o: ../Shader.h
 CMakeFiles/projekt_final.dir/main.cpp.o: ../ShaderLoader.h
 CMakeFiles/projekt_final.dir/main.cpp.o: ../SkyBox.h
+CMakeFiles/projekt_final.dir/main.cpp.o: ../Terrain.h
 CMakeFiles/projekt_final.dir/main.cpp.o: ../Texture.h
 CMakeFiles/projekt_final.dir/main.cpp.o: ../Vertex.h
 CMakeFiles/projekt_final.dir/main.cpp.o: ../main.cpp

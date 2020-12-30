@@ -33,6 +33,12 @@ void InputKeyboard::keysClicked() {
     }
     if (keys[68] == true)
         Application::getWindow()->getScene()->getCamera()->moveLeft();
+
+    if (keys[81] == true)
+        Application::getWindow()->getScene()->getCamera()->moveUp();
+    if (keys[69] == true)
+        Application::getWindow()->getScene()->getCamera()->moveDown();
+
     if (keys[264] == true)
     {
         Application::getWindow()->getScene()->getLight()->move(glm::vec3(0.0f, -0.5f, 0.0f));

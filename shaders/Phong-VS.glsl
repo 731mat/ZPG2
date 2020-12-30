@@ -23,4 +23,5 @@ void main () {
     //ex_worldNormal = normal;
 
     texCoord = inTexCoord;
+    //texCoord = vec2(ex_worldNormal.x,ex_worldNormal.y);
 }

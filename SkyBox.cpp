@@ -84,9 +84,6 @@ SkyBox::SkyBox(Shader* shader)
 
     this->cubemapTexture = this->loadCubemap(faces);
 
-
-
-
 }
 SkyBox::~SkyBox() {
 

@@ -90,6 +90,12 @@
 		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Application.h">
 			<Option target="projekt_final"/>
 		</Unit>
+		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/BezierCurve.cpp">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/BezierCurve.h">
+			<Option target="projekt_final"/>
+		</Unit>
 		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Camera.cpp">
 			<Option target="projekt_final"/>
 		</Unit>
@@ -190,6 +196,12 @@
 			<Option target="projekt_final"/>
 		</Unit>
 		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/SkyBox.h">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Terrain.cpp">
+			<Option target="projekt_final"/>
+		</Unit>
+		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Terrain.h">
 			<Option target="projekt_final"/>
 		</Unit>
 		<Unit filename="/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Texture.cpp">

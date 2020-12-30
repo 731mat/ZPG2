@@ -20,9 +20,16 @@ Shader::Shader(const char *vertexFile, const char *fragmentFile) {
 
     lightObjectsID = glGetUniformLocation(programID, "lightObjects");
 
-
     glm::mat4 r = glm::mat4();
     glUniformMatrix4fv(matrixID, 1, GL_FALSE, &r[0][0]);
+}
+
+void Shader::setTexture(GLint tex)
+{
+	this->setShader();
+	glActiveTexture(GL_TEXTURE0);
+	glBindTexture(GL_TEXTURE_2D, tex);
+	glUniform1i(this->getShader(), 0);
 }
 
 
@@ -58,7 +65,7 @@ void Shader::updateLight(Light* light) {
 	//send("lightObjects[0].position", lig);
 	//send("lightArray", lig);
 
-	printf("LIGHT [%f,%f,%f] \n", lig.x, lig.y, lig.z);
+	//printf("LIGHT [%f,%f,%f] \n", lig.x, lig.y, lig.z);
 }
 void Shader::updateLights(std::vector<Light*> lights){
 	glm::vec3 position[5];
@@ -75,6 +82,8 @@ void Shader::updateLights(std::vector<Light*> lights){
 
     //glUniform3fv(lightPositionID, lights.size(), &position[0][0]);
 }
+
+
 
 void Shader::setModelMatrix(glm::mat4 matrix) {
 	setShader();

@@ -50,7 +50,7 @@ glm::mat4 Camera::getProjection(){
 
  void Camera::registerObserver(OnChangeCameraObserver* observer) {
 	 camsObservers.push_back(observer);
-	 printf("Registrovano");
+	 printf("camera - Registrovano\n");
  }
  void Camera::removeObserver(OnChangeCameraObserver* observer){
 	 camsObservers.remove(observer);
@@ -107,6 +107,7 @@ void Camera::cursorCallback(float x, float y) {
 		curX = x;
 	if (curY == 0)
 		curY = y;
+
 	float dx = -(x - curX) / 100.0;
 	float dy = -(y - curY) / 100.0;
 

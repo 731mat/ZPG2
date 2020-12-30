@@ -20,6 +20,7 @@
 #include <glm/gtc/type_ptr.hpp> // glm::value_ptr
 
 #include <SOIL/SOIL.h>
+#include "opengl_helper.h"
 
 
 
@@ -28,11 +29,18 @@ class Shader;
 class Texture {
 private:
     std::string path;
+    GLuint id;
 
 public:
     Texture();
+    Texture(std::string path);
     ~Texture();
-    void loadTexture(Shader* shader);
+    int getId();
+    void loadTexture();
+    void bind(Shader* shader, const GLchar *nazev);
+    void bind(Shader* shader, const GLchar *nazev, int offset);
+
+    void unbind();
 };
 
 

@@ -10,9 +10,14 @@ Scene::Scene() {
     mshManager = new MeshManager;
 
 
-    texture->loadTexture(phong);
+    texture = new Texture("test.png");
+    texture2 = new Texture("wall.png");
+
 
     skybox = new SkyBox(skybox_shader);
+
+    terrain = new Terrain(terrain_shader,100,100,glm::vec3(0, 0, 0));
+
 
 
     camera = new Camera;
@@ -29,6 +34,7 @@ Scene::Scene() {
     camera->registerObserver((OnChangeCameraObserver*)lambert);
     camera->registerObserver((OnChangeCameraObserver*)phong);
     camera->registerObserver((OnChangeCameraObserver*)skybox_shader);
+    camera->registerObserver((OnChangeCameraObserver*)terrain_shader);
 
     camera->registerObserver(skybox);
 
@@ -44,14 +50,22 @@ Scene::Scene() {
     //mshManager->setMesh("plane", new Mesh(GL_TRIANGLES, plane , 10));
 
     //objects.push_back(new Object(new Model("../models/fels.3ds"), phong, glm::vec3(0, 2, 0), glm::vec3(1, 1, 1)));
-    objects.push_back(new Object(new Model("../models/pine.lwo"), phong, glm::vec3(0, 2, 0), glm::vec3(1, 1, 1)));
+    //objects.push_back(new Object(new Model("../models/pine.lwo"), phong, glm::vec3(0, 2, 0), glm::vec3(1, 1, 1)));
+    //objects.push_back(new Object(new Model("../models/blender/cube.obj"), phong, texture, glm::vec3(0, 0, 0), glm::vec3(1, 1, 1)));
+    Object* boxik = new Object(new Model("../models/obj/cube.obj"), phong, texture2, glm::vec3(0, 1, 0), glm::vec3(1, 1, 1));
+
+    vector<glm::vec2> points = { glm::vec2(0,1), glm::vec2(5, 1),  glm::vec2(1,5),  glm::vec2(1,0)};
+
+    boxik->setCurve(new BezierCurve(points));
+    objects.push_back(boxik);
+   // objects.push_back(new Object(new Model("../models/blender/test.obj"), phong, texture, glm::vec3(0, 0, 0), glm::vec3(0.4, 0.4, 0.4)));
 
 
-
-    objects.push_back(new Object(mshManager->getMesh("sphere"), phong, glm::vec3(0, 2, 0), glm::vec3(1, 1, 1)));
-    objects.push_back(new Object(mshManager->getMesh("worker"), phong, glm::vec3(0, -2, 0), glm::vec3(1, 1, 1)));
+    //objects.push_back(new Object(mshManager->getMesh("sphere"), phong,texture, glm::vec3(0, 2, 0), glm::vec3(1, 1, 1)));
+    //objects.push_back(new Object(mshManager->getMesh("worker"), phong_bez_txt, glm::vec3(0, -2, 0), glm::vec3(1, 1, 1)));
+    //objects.push_back(new Object(mshManager->getMesh("box"), phong,texture, glm::vec3(-3, 0, 2), glm::vec3(1, 1, 1)));
     //objects.push_back(new Object(mshManager->getMesh("jumper"), phong, glm::vec3(-2, 0, 0), glm::vec3(1, 1, 1)));
-    objects.push_back(new Object(mshManager->getMesh("suzi"), phong, glm::vec3(2, 0, 0), glm::vec3(1, 1, 1)));
+    //objects.push_back(new Object(mshManager->getMesh("suzi"), phong, glm::vec3(2, 0, 0), glm::vec3(1, 1, 1)));
     //objects.push_back(new Object(mshManager->getMesh("plane"), phong, glm::vec3(0, -3, 0), glm::vec3(100, 1, 1)));
 
 
@@ -82,6 +96,8 @@ void Scene::compileShaders() {
     skybox_shader = new Shader("../shaders/Skybox-VS.glsl", "../shaders/Skybox-FS.glsl");
     lambert = new Shader("../shaders/Lambert-VS.glsl", "../shaders/Lambert-FS.glsl");
     phong = new Shader("../shaders/Phong-VS.glsl", "../shaders/Phong-FS.glsl");
+    phong_bez_txt = new Shader("../shaders/Phong-VS-function.glsl", "../shaders/Phong-FS-function.glsl");
+    terrain_shader = new Shader("../shaders/Terrain-VS.glsl", "../shaders/Terrain-FS.glsl");
 
 }
 
@@ -89,14 +105,19 @@ void Scene::drawObj() {
     glClearStencil(0x00);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
     glStencilFunc(GL_ALWAYS, 0, 0xFF);
+    glClearColor(0, 0, 0, 1);
+
+
     //glStencilFunc(GL_ALWAYS, 2, 0xFF);
     //glStencilOp(GL_KEEP, GL_KEEP, GL_REPLACE);
 
    // Allow data to be written to the stencil buffer.
    //glStencilMask(0xFF);
     updateLight(light);
+
+    //skybox->drawSkybox();
     light->draw();
-    skybox->drawSkybox();
+    //terrain->draw();
 
     for (unsigned int i = 0; i < objects.size(); i++){
         glStencilFunc(GL_ALWAYS, i+1, 0xFF);
@@ -104,6 +125,12 @@ void Scene::drawObj() {
     }
     glStencilFunc(GL_ALWAYS, 0, 0xFF);
 
+}
+
+void Scene::updatePositionObj() {
+    for (unsigned int i = 0; i < objects.size(); i++){
+        objects[i]->move();
+    }
 }
 
 
@@ -156,14 +183,14 @@ void Scene::delObj()
 
 void Scene::moveObj(glm::vec3 position)
 {
-    if (index != 0)
-        objects[index - 1]->setPosition(position);
+   // if (index != 0)
+     //   objects[index - 1]->setPosition(position);
 }
 
 void Scene::rotObj(float rotateX)
 {
-    if (index != 0)
-        objects[index - 1]->rotate(rotateX);
+   // if (index != 0)
+     //   objects[index - 1]->rotate(rotateX);
 }
 
 

@@ -2,6 +2,7 @@
 
 layout(location = 0)in vec3 in_Position;
 layout(location = 1)in vec3 normal;
+layout(location = 2)in vec2 inTexCoord;
 
 out vec4 ex_worldPosition;
 out vec3 ex_worldNormal;

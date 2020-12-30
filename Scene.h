@@ -31,17 +31,21 @@
 #include "MeshManager.h"
 #include "Texture.h"
 #include "SkyBox.h"
+#include "Terrain.h"
+
 
 class Scene : public OnChangeLightObserver{
 private:
 
-    Shader *lambert, *phong, *skybox_shader;
+    Shader *lambert, *phong, *skybox_shader, *phong_bez_txt, *terrain_shader;
     Camera* camera;
     Light* light, *light2;
-    Texture* texture;
+    Texture *texture,*texture2;
     SkyBox* skybox;
     std::vector<Object*> objects;
     std::vector<Light*> lights;
+    Terrain* terrain;
+
 
     MeshManager* mshManager;
     GLuint index;
@@ -55,6 +59,7 @@ public:
     Scene();
     ~Scene();
     void drawObj();
+    void updatePositionObj();
     void addObj(bool plant = false);
     void delObj();
     void moveObj(glm::vec3 position);

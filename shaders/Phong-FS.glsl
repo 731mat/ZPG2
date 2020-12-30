@@ -23,7 +23,6 @@ uniform vec3 lightArray[5];
 uniform Light lightObjects[LIGHT];
 uniform int light_count;
 
-
 uniform sampler2D textura;
 out vec4 out_Color;
 
@@ -128,6 +127,7 @@ void main () {
     }
 
     out_Color =  vec4( color_out + ambient, 1.0);
+    //out_Color =  vec4(texCoord,0,0);
 
 }
 

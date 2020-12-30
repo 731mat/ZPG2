@@ -69,8 +69,14 @@ void Application::mainloop() {
 
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_STENCIL_TEST);
-	//glEnable(GL_TEXTURE_CUBE_MAP_SEAMLESS);
+	glEnable(GL_TEXTURE_CUBE_MAP_SEAMLESS);
+	//glEnable(GL_BLEND);
+	glEnable(GL_TEXTURE);
+	glEnable(GL_TEXTURE_2D);
 	glStencilOp(GL_KEEP, GL_KEEP, GL_REPLACE);
+
+
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
     GL_CHECK_ERRORS();
 
@@ -78,7 +84,8 @@ void Application::mainloop() {
 
     while (!glfwWindowShouldClose(window))
 	{
-		scene->drawObj();
+		scene->updatePositionObj();
+    	scene->drawObj();
 
 		glfwSwapBuffers(window);
 		glfwPollEvents();
