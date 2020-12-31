@@ -73,14 +73,14 @@ void Shader::updateLights(std::vector<Light*> lights){
 		position[i] = lights[i]->getPosition();
 		this->send(("lightObjects["+std::to_string(i)+ "].position").c_str(), lights[i]->getPosition());
 		this->send(("lightObjects["+std::to_string(i)+ "].lightType").c_str(), (int)lights[i]->getType());
-		this->send(("lightObjects["+std::to_string(i)+ "].direction").c_str(), lights[i]->getPositionDirection());
-		this->send(("lightObjects["+std::to_string(i)+ "].cutOff").c_str(), glm::cos(glm::radians(12.5f)));
-		this->send(("lightObjects["+std::to_string(i)+ "].outerCutOff").c_str(), glm::cos(glm::radians(17.5f)));
+
+		if(lights[i]->getType() == LightType::Directional || lights[i]->getType() == LightType::Spotlight)
+			this->send(("lightObjects["+std::to_string(i)+ "].direction").c_str(), lights[i]->getPositionDirection());
+		if(lights[i]->getType() == LightType::Spotlight)
+			this->send(("lightObjects["+std::to_string(i)+ "].cutOff").c_str(), glm::cos(glm::radians(12.5f)));
 	}
 
     this->send("light_count", (int)(lights.size()));
-
-    //glUniform3fv(lightPositionID, lights.size(), &position[0][0]);
 }
 
 

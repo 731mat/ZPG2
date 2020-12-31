@@ -7,7 +7,6 @@ struct Light {
     vec3 direction;
     int lightType;
     float cutOff;
-    float outerCutOff;
 };
 
 
@@ -78,25 +77,17 @@ vec3 spot_light(vec3 color,Light l,vec3 worldPos) {
         return vec3(0.0, 0.0, 0.0);
     }
 
-    float dot_product = max(dot(normalize(l.direction - worldPos.xyz), normalize(ex_worldNormal)), 0.0);
-    vec3 diffuse = dot_product * color* vec3( 0.385, 1.0, 0.812); // misto vec 3 barvu svetla
+    float dot_product = max(dot(normalize(l.position - worldPos.xyz), normalize(ex_worldNormal)), 0.0);
+    vec3 diffuse = dot_product * color;
 
     vec3 V = normalize(viewPosition - vec3(worldPos));
-    vec3 R = normalize(reflect(normalize(worldPos.xyz - l.direction), normalize(ex_worldNormal)));
+    vec3 R = normalize(reflect(normalize(worldPos.xyz - l.position), normalize(ex_worldNormal)));
     float specularTerm = pow(max(dot(R, V),0.0), 64);
 
     vec3 specular = vec3(0);
     if(dot_product > 0.0){
         vec3 specular = vec3(1,1,1) * specularTerm;
     }
-    float epsilon   = l.cutOff - l.outerCutOff;
-    float intensity = clamp((theta - l.outerCutOff) / epsilon, 0.0, 1.0);
-
-    diffuse  *= intensity;
-    specular *= intensity;
-
-
-
     return diffuse + specular;
 }
 

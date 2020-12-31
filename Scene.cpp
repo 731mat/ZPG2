@@ -19,17 +19,24 @@ Scene::Scene() {
     terrain = new Terrain(terrain_shader,100,100,glm::vec3(0, 0, 0));
 
 
-
     camera = new Camera;
     light = new Light(lambert, mshManager, LightType::Point);
-    light2 = new Light(20, 0, -50);
+    light2 = new Light(20, 0, -50, LightType::Spotlight);
+    light2->disable();
+
+    light3 = new Light(20, 0, -50, LightType::Directional);
+    light3->setPositionDirection(glm::vec3( 2, 2, 2));
+
     lights.push_back(light);
     lights.push_back(light2);
+    lights.push_back(light3);
 
     phong->updateLights(lights);
 
-    light2->registerObserver((OnChangeLightObserver*)phong);
     light->registerObserver((OnChangeLightObserver*)phong);
+    light2->registerObserver((OnChangeLightObserver*)phong);
+    light3->registerObserver((OnChangeLightObserver*)phong);
+
 
     camera->registerObserver((OnChangeCameraObserver*)lambert);
     camera->registerObserver((OnChangeCameraObserver*)phong);
@@ -52,13 +59,13 @@ Scene::Scene() {
     //objects.push_back(new Object(new Model("../models/fels.3ds"), phong, glm::vec3(0, 2, 0), glm::vec3(1, 1, 1)));
     //objects.push_back(new Object(new Model("../models/pine.lwo"), phong, glm::vec3(0, 2, 0), glm::vec3(1, 1, 1)));
     //objects.push_back(new Object(new Model("../models/blender/cube.obj"), phong, texture, glm::vec3(0, 0, 0), glm::vec3(1, 1, 1)));
-    Object* boxik = new Object(new Model("../models/obj/cube.obj"), phong, texture2, glm::vec3(0, 1, 0), glm::vec3(1, 1, 1));
+    Object* boxik = new Object(new Model("../models/obj/cube.obj"), phong, texture2, glm::vec3(0, 1, 0), glm::vec3(5, 5, 1));
 
     vector<glm::vec2> points = { glm::vec2(0,1), glm::vec2(5, 1),  glm::vec2(1,5),  glm::vec2(1,0)};
 
 
 
-    boxik->setCurve(new BezierCurve(glm::vec3(8.f, 2.f, 5.f), glm::vec3( 2.f, 2.f, -5.f), glm::vec3(-3.f, 2.f, 2.f), glm::vec3(-8.f, 2.f, 1.f)));
+    //boxik->setCurve(new BezierCurve(glm::vec3(8.f, 2.f, 5.f), glm::vec3( 2.f, 2.f, -5.f), glm::vec3(-3.f, 2.f, 2.f), glm::vec3(-8.f, 2.f, 1.f)));
     objects.push_back(boxik);
    // objects.push_back(new Object(new Model("../models/blender/test.obj"), phong, texture, glm::vec3(0, 0, 0), glm::vec3(0.4, 0.4, 0.4)));
 
@@ -119,7 +126,7 @@ void Scene::drawObj() {
 
     skybox->drawSkybox();
     light->draw();
-    terrain->draw();
+    //terrain->draw();
 
     for (unsigned int i = 0; i < objects.size(); i++){
         glStencilFunc(GL_ALWAYS, i+1, 0xFF);
@@ -132,6 +139,13 @@ void Scene::drawObj() {
 void Scene::updatePositionObj() {
     for (unsigned int i = 0; i < objects.size(); i++){
         objects[i]->move();
+    }
+
+    if(light2->isOn()){
+        glm::vec3 cam_direction = getCamera()->getCenter();
+        glm::vec3 cam_position = getCamera()->getEye();
+        getLight(2)->setPositionDirection(cam_direction);
+        getLight(2)->setPositionSource(cam_position);
     }
 }
 
@@ -204,7 +218,11 @@ Camera* Scene::getCamera() {
     return camera;
 }
 
-Light* Scene::getLight() {
+Light* Scene::getLight(int i) {
+    if(i == 1) return light;
+    if(i == 2) return light2;
+    if(i == 3) return light3;
+
     return light;
 }
 MeshManager* Scene::getObjMan()

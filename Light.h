@@ -24,14 +24,19 @@ class Light : public OnChangeLightSubject,Drawable {
 private:
 	LightType type;
 	float x, y, z;
-	Object* objLig;
+    glm::vec3 direction = glm::vec3( 0, 0, -1);
+	Object* objLig = nullptr;
+	bool isOff = false;
 public:
 
 	Light(Shader* shader, MeshManager* mshManager,LightType typ);
 	Light(float x, float y, float z);
+	Light(float x, float y, float z,LightType typ);
 	~Light();
 	glm::vec3 getPosition();
 	glm::vec3 getPositionDirection();
+	void setPositionSource(glm::vec3 v);
+    void setPositionDirection(glm::vec3 v);
 
 	LightType getType();
 
@@ -41,5 +46,10 @@ public:
 	void registerObserver(OnChangeLightObserver* observer);
 	void removeObserver(OnChangeLightObserver* observer);
 	void notifyObserver();
+
+	void disable() { isOff = true; }
+	void enable() { isOff = false; }
+	bool isOn() { return !isOff; }
+
 };
 #endif //PROJEKT_FINAL_LIGHT_H

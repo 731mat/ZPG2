@@ -41,27 +41,27 @@ void InputKeyboard::keysClicked() {
 
     if (keys[264] == true)
     {
-        Application::getWindow()->getScene()->getLight()->move(glm::vec3(0.0f, -0.5f, 0.0f));
+        Application::getWindow()->getScene()->getLight(1)->move(glm::vec3(0.0f, -0.5f, 0.0f));
     }
     if (keys[265] == true)
     {
-        Application::getWindow()->getScene()->getLight()->move(glm::vec3(0.0f, 0.5f, 0.0f));
+        Application::getWindow()->getScene()->getLight(1)->move(glm::vec3(0.0f, 0.5f, 0.0f));
     }
     if (keys[263] == true)
     {
-        Application::getWindow()->getScene()->getLight()->move(glm::vec3(-0.5f, 0.0f, 0.0f));
+        Application::getWindow()->getScene()->getLight(1)->move(glm::vec3(-0.5f, 0.0f, 0.0f));
     }
     if (keys[262] == true)
     {
-        Application::getWindow()->getScene()->getLight()->move(glm::vec3(0.5f, 0.0f, 0.0f));
+        Application::getWindow()->getScene()->getLight(1)->move(glm::vec3(0.5f, 0.0f, 0.0f));
     }
     if (keys[77] == true)
     {
-        Application::getWindow()->getScene()->getLight()->move(glm::vec3(0.0f, 0.0f, 0.5f));
+        Application::getWindow()->getScene()->getLight(1)->move(glm::vec3(0.0f, 0.0f, 0.5f));
     }
     if (keys[78] == true)
     {
-        Application::getWindow()->getScene()->getLight()->move(glm::vec3(0.0f, 0.0f, -0.5f));
+        Application::getWindow()->getScene()->getLight(1)->move(glm::vec3(0.0f, 0.0f, -0.5f));
     }
     if (keys[80] == true)
     {
@@ -75,6 +75,19 @@ void InputKeyboard::keysClicked() {
     {
         Application::getWindow()->getScene()->moveObj();
     }*/
+
+
+    // pohyb svetla U
+    if (keys[85] == true)
+    {
+        if(Application::getWindow()->getScene()->getLight(2)->isOn())
+            Application::getWindow()->getScene()->getLight(2)->disable();
+        else
+            Application::getWindow()->getScene()->getLight(2)->enable();
+
+    }
+
+
     if (keys[71] == true)
     {
         Application::getWindow()->getScene()->moveObj(glm::vec3(0.0f, -0.5f, 0.0f));

@@ -42,6 +42,8 @@ public:
 	void moveUp();
 
 	glm::vec3 getEye();
+	glm::vec3 getCenter();
+
 	float getPosX();
 	float getPosY();
 	float getPosZ();

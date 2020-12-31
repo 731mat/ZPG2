@@ -28,8 +28,12 @@ InputMouse::~InputMouse()
 
 void InputMouse::buttonClicked()
 {
-    if (mouseClick[1] == true)
+    if (mouseClick[1] == true){
         Application::getWindow()->getScene()->getCamera()->cursorCallback(mouseCursor.x,mouseCursor.y);
+
+
+    }
+
     if (mouseClick[0] == true){
         printf("x:%f y:%f \n",getInputMouse()->mouseCursor.x, getInputMouse()->mouseCursor.y);
 

@@ -39,7 +39,7 @@ private:
 
     Shader *lambert, *phong, *skybox_shader, *phong_bez_txt, *terrain_shader;
     Camera* camera;
-    Light* light, *light2;
+    Light* light, *light2, *light3;
     Texture *texture,*texture2;
     SkyBox* skybox;
     std::vector<Object*> objects;
@@ -67,7 +67,7 @@ public:
 
     void updateLight(Light* light);
     Camera* getCamera();
-    Light* getLight();
+    Light* getLight(int i);
     MeshManager* getObjMan();
 };
 

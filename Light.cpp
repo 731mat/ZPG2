@@ -16,24 +16,45 @@ Light::Light(float x, float y, float z) {
 	this->type = LightType::Directional;
 }
 
+Light::Light(float x, float y, float z, LightType typ) {
+	this->x = x;
+	this->y = y;
+	this->z = z;
+	this->type = typ;
+}
+
 Light::~Light() {}
 
 glm::vec3 Light::getPosition() {
+	if(isOff) return glm::vec3(0, 0, 0);
 	return glm::vec3(x, y, z);
 }
-glm::vec3 Light::getPositionDirection() {
-	return glm::vec3( 2, 2, 2);
-}
-void Light::draw() {
-	objLig->draw();
 
+glm::vec3 Light::getPositionDirection() {
+	if(isOff) return glm::vec3(0, 0, 0);
+	return direction;
+}
+
+void Light::setPositionSource(glm::vec3 v) {
+    this->x = v.x;
+    this->y = v.y;
+    this->z = v.z;
+}
+
+void Light::setPositionDirection(glm::vec3 v) {
+    this->direction = normalize(v);
+}
+
+
+void Light::draw() {
+	if(!isOff) objLig->draw();
 }
 
 void Light::setPosition(glm::vec3 vector){
     this->x = vector.x;
     this->y = vector.y;
     this->z = vector.z;
-    objLig->setPosition(vector);
+	if(objLig != nullptr) objLig->setPosition(vector);
     notifyObserver();
 }
 void Light::move(glm::vec3 vector)
@@ -41,7 +62,7 @@ void Light::move(glm::vec3 vector)
 	this->x += vector.x;
 	this->y += vector.y;
 	this->z += vector.z;
-	objLig->setPosition(vector);
+	if(objLig != nullptr) objLig->setPosition(vector);
 	notifyObserver();
 }
 
@@ -63,3 +84,9 @@ void Light::notifyObserver() {
 LightType Light::getType() {
 	return this->type;
 }
+
+
+
+
+
+

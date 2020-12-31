@@ -12,7 +12,7 @@ Camera::Camera() {
 
 
 	//position
-	eye = glm::vec3(0.f, 0.f, 7);
+	eye = glm::vec3(0.f, 0.f, 20);
 	//direction
 	center = glm::vec3(0, 0, -1.f);
 	//idk exactly
@@ -28,6 +28,9 @@ Camera::~Camera() {
 
 glm::vec3 Camera::getEye() {
 	return eye;
+}
+glm::vec3 Camera::getCenter(){
+    return center;
 }
 
 float Camera::getPosX() {
