@@ -9,13 +9,11 @@ Scene::Scene() {
     compileShaders();
     mshManager = new MeshManager;
 
-
-    texture = new Texture("test.png");
+    texture = new Texture("wood.png");
     texture2 = new Texture("wall.png");
 
 
     skybox = new SkyBox(skybox_shader);
-
     terrain = new Terrain(terrain_shader,100,100,glm::vec3(0, 0, 0));
 
 
@@ -59,18 +57,18 @@ Scene::Scene() {
     //objects.push_back(new Object(new Model("../models/fels.3ds"), phong, glm::vec3(0, 2, 0), glm::vec3(1, 1, 1)));
     //objects.push_back(new Object(new Model("../models/pine.lwo"), phong, glm::vec3(0, 2, 0), glm::vec3(1, 1, 1)));
     //objects.push_back(new Object(new Model("../models/blender/cube.obj"), phong, texture, glm::vec3(0, 0, 0), glm::vec3(1, 1, 1)));
-    Object* boxik = new Object(new Model("../models/obj/cube.obj"), phong, texture2, glm::vec3(0, 1, 0), glm::vec3(5, 5, 1));
+    Object* boxik = new Object(new Model("../models/obj/cube.obj"), phong, texture2, glm::vec3(0, 1, 0), glm::vec3(1, 1, 1));
 
     vector<glm::vec2> points = { glm::vec2(0,1), glm::vec2(5, 1),  glm::vec2(1,5),  glm::vec2(1,0)};
 
 
 
-    //boxik->setCurve(new BezierCurve(glm::vec3(8.f, 2.f, 5.f), glm::vec3( 2.f, 2.f, -5.f), glm::vec3(-3.f, 2.f, 2.f), glm::vec3(-8.f, 2.f, 1.f)));
+    boxik->setCurve(new BezierCurve(glm::vec3(8.f, 2.f, 5.f), glm::vec3( 2.f, 2.f, -5.f), glm::vec3(-3.f, 2.f, 2.f), glm::vec3(-8.f, 2.f, 1.f)));
     objects.push_back(boxik);
    // objects.push_back(new Object(new Model("../models/blender/test.obj"), phong, texture, glm::vec3(0, 0, 0), glm::vec3(0.4, 0.4, 0.4)));
 
 
-    //objects.push_back(new Object(mshManager->getMesh("sphere"), phong,texture, glm::vec3(0, 2, 0), glm::vec3(1, 1, 1)));
+    //objects.push_back(new Object(mshManager->getMesh("sphere"), phong, texture, glm::vec3(0, 2, 0), glm::vec3(1, 1, 1)));
     //objects.push_back(new Object(mshManager->getMesh("worker"), phong_bez_txt, glm::vec3(0, -2, 0), glm::vec3(1, 1, 1)));
     //objects.push_back(new Object(mshManager->getMesh("box"), phong,texture, glm::vec3(-3, 0, 2), glm::vec3(1, 1, 1)));
     //objects.push_back(new Object(mshManager->getMesh("jumper"), phong, glm::vec3(-2, 0, 0), glm::vec3(1, 1, 1)));
@@ -126,7 +124,7 @@ void Scene::drawObj() {
 
     skybox->drawSkybox();
     light->draw();
-    //terrain->draw();
+    terrain->draw();
 
     for (unsigned int i = 0; i < objects.size(); i++){
         glStencilFunc(GL_ALWAYS, i+1, 0xFF);
@@ -168,16 +166,16 @@ void Scene::addObj(bool plant)
     glReadPixels(x, newy, 1, 1, GL_STENCIL_INDEX, GL_UNSIGNED_INT, &index);
     printf("Clicked on pixel %d, %d, color % 02hhx % 02hhx % 02hhx % 02hhx, depth %f, stencil index %u\n", x, newy, color[0], color[1], color[2], color[3], depth, index);
 
+    glm::vec3 screenX = glm::vec3(x, newy, depth);
+    glm::mat4 view = getCamera()->getView();
+    glm::mat4 projection = getCamera()->getProjection();
+    glm::vec4 viewPort = glm::vec4(0, 0, width, height);
+    glm::vec3 pos = glm::unProject(screenX, view, projection, viewPort);
+    printf("unProject[%f, %f, %f]\n", pos.x, pos.y, pos.z);
 
     if (plant == true)
     {
-        glm::vec3 screenX = glm::vec3(x, newy, depth);
-        glm::mat4 view = getCamera()->getView();
-        glm::mat4 projection = getCamera()->getProjection();
-        glm::vec4 viewPort = glm::vec4(0, 0, width, height);
-        glm::vec3 pos = glm::unProject(screenX, view, projection, viewPort);
-        objects.push_back(new Object(mshManager->getMesh("box"), phong, glm::vec3(pos.x, pos.y, pos.z), glm::vec3(1, 1, 1)));
-        printf("unProject[%f, %f, %f]\n", pos.x, pos.y, pos.z);
+        objects.push_back(new Object(mshManager->getMesh("box"), phong,texture, glm::vec3(pos.x, pos.y, pos.z), glm::vec3(1, 1, 1)));
     }
 }
 

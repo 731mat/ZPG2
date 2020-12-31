@@ -296,20 +296,6 @@ SkyBox.h
 Terrain.h
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Terrain.h
 
-/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Shader.cpp
-Shader.h
-/Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Shader.h
-glm/vec3.hpp
--
-glm/vec4.hpp
--
-glm/mat4x4.hpp
--
-glm/gtc/matrix_transform.hpp
--
-glm/gtc/type_ptr.hpp
--
-
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/Shader.h
 ShaderLoader.h
 /Users/hlousek/Documents/skola/5sem/ZPG/projekt_final_2/ShaderLoader.h

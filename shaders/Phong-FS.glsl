@@ -53,19 +53,18 @@ vec3 point_light(vec3 color,Light l,vec3 worldPos) {
 
 vec3 direction_light(vec3 color,Light l,vec3 worldPos) {
 
-    float dot_product = max(dot(normalize(l.direction - worldPos.xyz), normalize(ex_worldNormal)), 0.0);
-    vec3 diffuse = dot_product * color; // misto vec 3 barvu svetla
+    float dot_product = max(dot(normalize(l.position - worldPos.xyz), normalize(ex_worldNormal)), 0.0);
+    vec3 diffuse = dot_product * color;
 
     vec3 V = normalize(viewPosition - vec3(worldPos));
-    vec3 R = normalize(reflect(normalize(worldPos.xyz - l.direction), normalize(ex_worldNormal)));
+    vec3 R = normalize(reflect(normalize(worldPos.xyz - l.position), normalize(ex_worldNormal)));
     float specularTerm = pow(max(dot(R, V),0.0), 64);
 
     vec3 specular = vec3(0);
     if(dot_product > 0.0){
         vec3 specular = vec3(1,1,1) * specularTerm;
     }
-
-    return (diffuse + specular );
+    return diffuse + specular;
 }
 
 vec3 spot_light(vec3 color,Light l,vec3 worldPos) {
