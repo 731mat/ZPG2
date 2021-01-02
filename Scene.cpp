@@ -63,7 +63,7 @@ Scene::Scene() {
 
 
 
-    boxik->setCurve(new BezierCurve(glm::vec3(8.f, 2.f, 5.f), glm::vec3( 2.f, 2.f, -5.f), glm::vec3(-3.f, 2.f, 2.f), glm::vec3(-8.f, 2.f, 1.f)));
+    //boxik->setCurve(new BezierCurve(glm::vec3(8.f, 2.f, 5.f), glm::vec3( 2.f, 2.f, -5.f), glm::vec3(-3.f, 2.f, 2.f), glm::vec3(-8.f, 2.f, 1.f)));
     objects.push_back(boxik);
    // objects.push_back(new Object(new Model("../models/blender/test.obj"), phong, texture, glm::vec3(0, 0, 0), glm::vec3(0.4, 0.4, 0.4)));
 
